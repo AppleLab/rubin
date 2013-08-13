@@ -11,13 +11,17 @@
 @interface SecondViewController ()
 
 @end
-
 @implementation SecondViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSURL* url = [NSURL URLWithString: @"http://37.139.2.194"];
+    NSURLRequest *request = [NSURLRequest requestWithURL: url];
+     
+    [self.webView loadRequest:request];
+    [self.webView setScalesPageToFit:YES];
 }
 
 - (void)didReceiveMemoryWarning
