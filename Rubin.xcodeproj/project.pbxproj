@@ -56,6 +56,8 @@
 		C5F7B81A17B9E51900FB6223 /* RubinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RubinTests-Info.plist"; sourceTree = "<group>"; };
 		C5F7B81C17B9E51900FB6223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5F7B81E17B9E51900FB6223 /* RubinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubinTests.m; sourceTree = "<group>"; };
+		C5F7B82917B9E5F000FB6223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		C5F7B82A17B9E5F000FB6223 /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +117,8 @@
 		C5F7B7F617B9E51900FB6223 /* Rubin */ = {
 			isa = PBXGroup;
 			children = (
-				C5F7B7FF17B9E51900FB6223 /* AppDelegate.h */,
-				C5F7B80017B9E51900FB6223 /* AppDelegate.m */,
-				C5F7B80217B9E51900FB6223 /* Main.storyboard */,
-				C5F7B80517B9E51900FB6223 /* FirstViewController.h */,
-				C5F7B80617B9E51900FB6223 /* FirstViewController.m */,
-				C5F7B80817B9E51900FB6223 /* SecondViewController.h */,
-				C5F7B80917B9E51900FB6223 /* SecondViewController.m */,
-				C5F7B80B17B9E51900FB6223 /* Images.xcassets */,
+				C5F7B82B17B9E60D00FB6223 /* UI */,
+				C5F7B82817B9E5BA00FB6223 /* Core */,
 				C5F7B7F717B9E51900FB6223 /* Supporting Files */,
 			);
 			path = Rubin;
@@ -131,6 +127,9 @@
 		C5F7B7F717B9E51900FB6223 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5F7B7FF17B9E51900FB6223 /* AppDelegate.h */,
+				C5F7B80017B9E51900FB6223 /* AppDelegate.m */,
+				C5F7B80B17B9E51900FB6223 /* Images.xcassets */,
 				C5F7B7F817B9E51900FB6223 /* Rubin-Info.plist */,
 				C5F7B7F917B9E51900FB6223 /* InfoPlist.strings */,
 				C5F7B7FC17B9E51900FB6223 /* main.m */,
@@ -155,6 +154,27 @@
 				C5F7B81B17B9E51900FB6223 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5F7B82817B9E5BA00FB6223 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C5F7B82917B9E5F000FB6223 /* Core.h */,
+				C5F7B82A17B9E5F000FB6223 /* Core.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C5F7B82B17B9E60D00FB6223 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C5F7B80217B9E51900FB6223 /* Main.storyboard */,
+				C5F7B80517B9E51900FB6223 /* FirstViewController.h */,
+				C5F7B80617B9E51900FB6223 /* FirstViewController.m */,
+				C5F7B80817B9E51900FB6223 /* SecondViewController.h */,
+				C5F7B80917B9E51900FB6223 /* SecondViewController.m */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
