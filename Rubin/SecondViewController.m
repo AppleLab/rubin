@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "Core.h"
 
 @interface SecondViewController ()
 
@@ -17,7 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSURL* url = [NSURL URLWithString: @"http://37.139.2.194"];
+    NSURL* url = [Core getForumURL];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL: url];
      
     [self.webView loadRequest:request];

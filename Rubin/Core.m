@@ -27,5 +27,8 @@ static Core* _core;
         return _core;
     }
 }
-
++(NSURL*) getForumURL
+{
+    return [NSURL URLWithString: @"http://37.139.2.194"];
+}
 @end

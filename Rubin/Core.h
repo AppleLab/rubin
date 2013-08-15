@@ -11,5 +11,5 @@
 @interface Core : NSObject
 
 +(Core*) core;
-
++(NSURL*) getForumURL;
 @end

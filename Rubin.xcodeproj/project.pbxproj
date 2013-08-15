@@ -22,6 +22,7 @@
 		C5F7B81517B9E51900FB6223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7F417B9E51900FB6223 /* UIKit.framework */; };
 		C5F7B81D17B9E51900FB6223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5F7B81B17B9E51900FB6223 /* InfoPlist.strings */; };
 		C5F7B81F17B9E51900FB6223 /* RubinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B81E17B9E51900FB6223 /* RubinTests.m */; };
+		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +279,7 @@
 				C5F7B80117B9E51900FB6223 /* AppDelegate.m in Sources */,
 				C5F7B80717B9E51900FB6223 /* FirstViewController.m in Sources */,
 				C5F7B7FD17B9E51900FB6223 /* main.m in Sources */,
+				CE93BF2417BCF35B00608860 /* Core.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
 				INFOPLIST_FILE = "Rubin/Rubin-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -416,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
 				INFOPLIST_FILE = "Rubin/Rubin-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -480,6 +484,7 @@
 				C5F7B82417B9E51900FB6223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5F7B82517B9E51900FB6223 /* Build configuration list for PBXNativeTarget "RubinTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +493,7 @@
 				C5F7B82717B9E51900FB6223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
