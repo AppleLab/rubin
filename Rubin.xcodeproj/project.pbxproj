@@ -24,6 +24,7 @@
 		C5F7B81F17B9E51900FB6223 /* RubinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B81E17B9E51900FB6223 /* RubinTests.m */; };
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
 		CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED208817BCFAE000DA13C6 /* ThirdViewController.m */; };
+		CEED208C17BCFD4000DA13C6 /* RubinInformation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEED208B17BCFD4000DA13C6 /* RubinInformation.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,7 @@
 		C5F7B82A17B9E5F000FB6223 /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		CEED208A17BCFBB600DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RubinInformation.jpg; path = ../../../Desktop/RubinInformation.jpg; sourceTree = "<group>"; };
+		CEED208B17BCFD4000DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RubinInformation.jpg; path = ../../../Downloads/RubinInformation.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +174,8 @@
 		C5F7B82B17B9E60D00FB6223 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CEED208A17BCFBB600DA13C6 /* RubinInformation.jpg */,
 				C5F7B80217B9E51900FB6223 /* Main.storyboard */,
+				CEED208B17BCFD4000DA13C6 /* RubinInformation.jpg */,
 				C5F7B80517B9E51900FB6223 /* FirstViewController.h */,
 				C5F7B80617B9E51900FB6223 /* FirstViewController.m */,
 				C5F7B80817B9E51900FB6223 /* SecondViewController.h */,
@@ -262,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F7B80C17B9E51900FB6223 /* Images.xcassets in Resources */,
+				CEED208C17BCFD4000DA13C6 /* RubinInformation.jpg in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
 				C5F7B80417B9E51900FB6223 /* Main.storyboard in Resources */,
 			);
