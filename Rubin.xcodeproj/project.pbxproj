@@ -23,6 +23,7 @@
 		C5F7B81D17B9E51900FB6223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5F7B81B17B9E51900FB6223 /* InfoPlist.strings */; };
 		C5F7B81F17B9E51900FB6223 /* RubinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B81E17B9E51900FB6223 /* RubinTests.m */; };
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
+		CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED208817BCFAE000DA13C6 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,9 @@
 		C5F7B81E17B9E51900FB6223 /* RubinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubinTests.m; sourceTree = "<group>"; };
 		C5F7B82917B9E5F000FB6223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C5F7B82A17B9E5F000FB6223 /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		CEED208A17BCFBB600DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RubinInformation.jpg; path = ../../../Desktop/RubinInformation.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,11 +173,14 @@
 		C5F7B82B17B9E60D00FB6223 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CEED208A17BCFBB600DA13C6 /* RubinInformation.jpg */,
 				C5F7B80217B9E51900FB6223 /* Main.storyboard */,
 				C5F7B80517B9E51900FB6223 /* FirstViewController.h */,
 				C5F7B80617B9E51900FB6223 /* FirstViewController.m */,
 				C5F7B80817B9E51900FB6223 /* SecondViewController.h */,
 				C5F7B80917B9E51900FB6223 /* SecondViewController.m */,
+				CEED208717BCFAE000DA13C6 /* ThirdViewController.h */,
+				CEED208817BCFAE000DA13C6 /* ThirdViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -277,6 +284,7 @@
 			files = (
 				C5F7B80A17B9E51900FB6223 /* SecondViewController.m in Sources */,
 				C5F7B80117B9E51900FB6223 /* AppDelegate.m in Sources */,
+				CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */,
 				C5F7B80717B9E51900FB6223 /* FirstViewController.m in Sources */,
 				C5F7B7FD17B9E51900FB6223 /* main.m in Sources */,
 				CE93BF2417BCF35B00608860 /* Core.m in Sources */,
