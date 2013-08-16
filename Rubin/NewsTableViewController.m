@@ -7,7 +7,7 @@
 //
 
 #import "NewsTableViewController.h"
-#import "NewsViewController.h";
+#import "NewsViewController.h"
 
 @interface NewsTableViewController ()
 
@@ -54,7 +54,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
     }
     
-    cell.imageView.image = [UIImage imageNamed: @"rubin_icon.png"];
+    cell.imageView.image = [UIImage imageNamed: @"images/rubin_icon.png"];
     cell.textLabel.text = @"news";
     cell.detailTextLabel.text = [dataArray objectAtIndex:indexPath.row];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:11];
