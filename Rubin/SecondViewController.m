@@ -12,8 +12,9 @@
 @interface SecondViewController ()
 
 @end
-@implementation SecondViewController
 
+@implementation SecondViewController
+@synthesize webView;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -22,8 +23,8 @@
     
     NSURLRequest *request = [NSURLRequest requestWithURL: url];
      
-    [self.webView loadRequest:request];
-    [self.webView setScalesPageToFit:YES];
+    [webView loadRequest:request];
+    [webView setScalesPageToFit:YES];
 }
 
 - (void)didReceiveMemoryWarning
