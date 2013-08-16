@@ -22,6 +22,9 @@
 		C5F7B81517B9E51900FB6223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7F417B9E51900FB6223 /* UIKit.framework */; };
 		C5F7B81D17B9E51900FB6223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5F7B81B17B9E51900FB6223 /* InfoPlist.strings */; };
 		C5F7B81F17B9E51900FB6223 /* RubinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B81E17B9E51900FB6223 /* RubinTests.m */; };
+		CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */; };
+		CE2F3EBF17BE1D0C00B7C607 /* rubin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2F3EBE17BE1D0C00B7C607 /* rubin_icon.png */; };
+		CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE412A8217BE21B600A5E802 /* NewsViewController.m */; };
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
 		CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED208817BCFAE000DA13C6 /* ThirdViewController.m */; };
 		CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */; };
@@ -61,6 +64,11 @@
 		C5F7B81E17B9E51900FB6223 /* RubinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubinTests.m; sourceTree = "<group>"; };
 		C5F7B82917B9E5F000FB6223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C5F7B82A17B9E5F000FB6223 /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		CE2F3EBA17BE161B00B7C607 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		CE2F3EBE17BE1D0C00B7C607 /* rubin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rubin_icon.png; path = ../../../../../../../Desktop/rubin_icon.png; sourceTree = "<group>"; };
+		CE412A8117BE21B600A5E802 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		CE412A8217BE21B600A5E802 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RubinInformation.jpg; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 			children = (
 				C5F7B7FF17B9E51900FB6223 /* AppDelegate.h */,
 				C5F7B80017B9E51900FB6223 /* AppDelegate.m */,
+				CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */,
 				C5F7B80B17B9E51900FB6223 /* Images.xcassets */,
 				C5F7B7F817B9E51900FB6223 /* Rubin-Info.plist */,
 				C5F7B7F917B9E51900FB6223 /* InfoPlist.strings */,
@@ -174,7 +183,8 @@
 		C5F7B82B17B9E60D00FB6223 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */,
+				CE412A8417BE342200A5E802 /* news */,
+				CE2F3EBD17BE1CFA00B7C607 /* images */,
 				C5F7B80217B9E51900FB6223 /* Main.storyboard */,
 				C5F7B80517B9E51900FB6223 /* FirstViewController.h */,
 				C5F7B80617B9E51900FB6223 /* FirstViewController.m */,
@@ -184,6 +194,25 @@
 				CEED208817BCFAE000DA13C6 /* ThirdViewController.m */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CE2F3EBE17BE1D0C00B7C607 /* rubin_icon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		CE412A8417BE342200A5E802 /* news */ = {
+			isa = PBXGroup;
+			children = (
+				CE412A8217BE21B600A5E802 /* NewsViewController.m */,
+				CE412A8117BE21B600A5E802 /* NewsViewController.h */,
+				CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */,
+				CE2F3EBA17BE161B00B7C607 /* NewsTableViewController.h */,
+			);
+			name = news;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +293,7 @@
 			files = (
 				C5F7B80C17B9E51900FB6223 /* Images.xcassets in Resources */,
 				CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */,
+				CE2F3EBF17BE1D0C00B7C607 /* rubin_icon.png in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
 				C5F7B80417B9E51900FB6223 /* Main.storyboard in Resources */,
 			);
@@ -286,6 +316,8 @@
 			files = (
 				C5F7B80A17B9E51900FB6223 /* SecondViewController.m in Sources */,
 				C5F7B80117B9E51900FB6223 /* AppDelegate.m in Sources */,
+				CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */,
+				CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */,
 				CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */,
 				C5F7B80717B9E51900FB6223 /* FirstViewController.m in Sources */,
 				C5F7B7FD17B9E51900FB6223 /* main.m in Sources */,
