@@ -12,8 +12,8 @@
                         <viewControllerLayoutGuide type="top" id="frb-qi-SiW"/>
                         <viewControllerLayoutGuide type="bottom" id="5zU-bW-94x"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="2VE-Yg-loa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" alwaysBounceVertical="YES" pagingEnabled="YES" canCancelContentTouches="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRW-iS-sNt">
@@ -284,6 +284,8 @@
                     <connections>
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="lLc-N1-Rch" kind="relationship" relationship="viewControllers" id="42u-RO-z41"/>
+                        <segue destination="pDa-Xr-6jp" kind="relationship" relationship="viewControllers" id="F4b-8k-XjS"/>
                         <segue destination="lLc-N1-Rch" kind="relationship" relationship="viewControllers" id="42u-RO-z41"/>
                         <segue destination="DOj-q8-SGP" kind="relationship" relationship="viewControllers" id="y7w-BN-G4g"/>
                     </connections>
