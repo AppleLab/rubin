@@ -61,6 +61,7 @@
 		C5F7B81E17B9E51900FB6223 /* RubinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubinTests.m; sourceTree = "<group>"; };
 		C5F7B82917B9E5F000FB6223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C5F7B82A17B9E5F000FB6223 /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		CE93B56517BE31DF00058B0F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../Downloads/icon.png; sourceTree = "<group>"; };
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RubinInformation.jpg; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		C5F7B7E417B9E51900FB6223 = {
 			isa = PBXGroup;
 			children = (
+				CE93B56517BE31DF00058B0F /* icon.png */,
 				C5F7B7F617B9E51900FB6223 /* Rubin */,
 				C5F7B81817B9E51900FB6223 /* RubinTests */,
 				C5F7B7EF17B9E51900FB6223 /* Frameworks */,
@@ -410,7 +412,6 @@
 		C5F7B82317B9E51900FB6223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
@@ -424,7 +425,6 @@
 		C5F7B82417B9E51900FB6223 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
