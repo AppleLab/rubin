@@ -64,7 +64,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Магазин" image="3_icon" id="u1e-5L-l1D"/>
                     <navigationItem key="navigationItem" id="TOR-Pc-Vbm"/>
                     <connections>
                         <outlet property="MyTextView" destination="IRW-iS-sNt" id="Rc9-6A-vV3"/>
@@ -74,11 +74,11 @@
             </objects>
             <point key="canvasLocation" x="371" y="-224"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Билеты-->
         <scene sceneID="cbP-Cx-BCO">
             <objects>
                 <navigationController definesPresentationContext="YES" id="lLc-N1-Rch" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="BBm-hg-EkP"/>
+                    <tabBarItem key="tabBarItem" title="Билеты" image="credit-cards.png" id="BBm-hg-EkP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UAq-rD-hyS">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -95,7 +95,7 @@
             <objects>
                 <tableViewController id="oqa-U2-8Hb" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jsN-fQ-zfb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -222,18 +222,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Q65-lT-cNI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBD-IS-Fbr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="449"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" id="34D-Th-oam"/>
+                    <tabBarItem key="tabBarItem" title="Форум" image="иконка55-2.png" id="34D-Th-oam"/>
                     <connections>
                         <outlet property="webView" destination="fBD-IS-Fbr" id="bBf-6g-Tb9"/>
                     </connections>
@@ -242,7 +242,7 @@
             </objects>
             <point key="canvasLocation" x="371" y="624"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Third View Controller - Команда-->
         <scene sceneID="EBE-hs-g4m">
             <objects>
                 <viewController id="pDa-Xr-6jp" customClass="ThirdViewController" sceneMemberID="viewController">
@@ -251,17 +251,17 @@
                         <viewControllerLayoutGuide type="bottom" id="1yQ-g7-Iy9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9iE-YO-7FX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2G-5N-CIH">
-                                <rect key="frame" x="0.0" y="20" width="320" height="450"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="d8D-db-iod"/>
+                    <tabBarItem key="tabBarItem" title="Команда" image="иконка111.png" id="d8D-db-iod"/>
                     <connections>
                         <outlet property="scrollView" destination="a2G-5N-CIH" id="Vyh-Ry-KhY"/>
                     </connections>
@@ -276,18 +276,20 @@
                 <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="r3I-VT-HQ8"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="JQR-rB-NYL">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" shadowImage="credit-cards.png" id="JQR-rB-NYL" colorLabel="IBBuiltInLabel-Blue">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.73725491759999995" green="0.2078431547" blue="0.082352943720000002" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
-                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
-                        <segue destination="lLc-N1-Rch" kind="relationship" relationship="viewControllers" id="42u-RO-z41"/>
                         <segue destination="pDa-Xr-6jp" kind="relationship" relationship="viewControllers" id="F4b-8k-XjS"/>
-                        <segue destination="lLc-N1-Rch" kind="relationship" relationship="viewControllers" id="42u-RO-z41"/>
                         <segue destination="DOj-q8-SGP" kind="relationship" relationship="viewControllers" id="y7w-BN-G4g"/>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
+                        <segue destination="lLc-N1-Rch" kind="relationship" relationship="viewControllers" id="42u-RO-z41"/>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -381,11 +383,11 @@
             </objects>
             <point key="canvasLocation" x="589" y="1469"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Новости-->
         <scene sceneID="lRY-z1-Lbn">
             <objects>
                 <navigationController definesPresentationContext="YES" id="DOj-q8-SGP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8hv-Dw-Zgn"/>
+                    <tabBarItem key="tabBarItem" title="Новости" image="rss.png" id="8hv-Dw-Zgn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IWw-aC-J5n">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -399,7 +401,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="3_icon" width="30" height="30"/>
+        <image name="credit-cards.png" width="30" height="30"/>
+        <image name="rss.png" width="30" height="30"/>
+        <image name="иконка111.png" width="30" height="30"/>
+        <image name="иконка55-2.png" width="30" height="30"/>
     </resources>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
