@@ -25,12 +25,6 @@
 		CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */; };
 		CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE412A8217BE21B600A5E802 /* NewsViewController.m */; };
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
-		CECD99AF17BF5B2800F4F783 /* иконка55-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CECD99AE17BF5B2800F4F783 /* иконка55-1.png */; };
-		CECD99B117BF5C6500F4F783 /* иконка55-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CECD99B017BF5C6500F4F783 /* иконка55-2.png */; };
-		CECD99B317BF5F4C00F4F783 /* иконка111.png in Resources */ = {isa = PBXBuildFile; fileRef = CECD99B217BF5F4C00F4F783 /* иконка111.png */; };
-		CECD99B517BF611200F4F783 /* иконка22.png in Resources */ = {isa = PBXBuildFile; fileRef = CECD99B417BF611200F4F783 /* иконка22.png */; };
-		CECD99B917BF6B9F00F4F783 /* credit-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = CECD99B817BF6B9F00F4F783 /* credit-cards.png */; };
-		CECD99BD17BF6E8100F4F783 /* rss.png in Resources */ = {isa = PBXBuildFile; fileRef = CECD99BC17BF6E8100F4F783 /* rss.png */; };
 		CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED208817BCFAE000DA13C6 /* ThirdViewController.m */; };
 		CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */; };
 /* End PBXBuildFile section */
@@ -74,12 +68,6 @@
 		CE412A8117BE21B600A5E802 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE412A8217BE21B600A5E802 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		CEBB2C9B17BE3E4000291D45 /* rubin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rubin_icon.png; sourceTree = "<group>"; };
-		CECD99AE17BF5B2800F4F783 /* иконка55-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "иконка55-1.png"; path = "../../../../../../../Downloads/иконка55-1.png"; sourceTree = "<group>"; };
-		CECD99B017BF5C6500F4F783 /* иконка55-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "иконка55-2.png"; path = "../../../../../../../Downloads/иконка55-2.png"; sourceTree = "<group>"; };
-		CECD99B217BF5F4C00F4F783 /* иконка111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "иконка111.png"; path = "../../../../../../../Downloads/иконка111.png"; sourceTree = "<group>"; };
-		CECD99B417BF611200F4F783 /* иконка22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "иконка22.png"; path = "../../../../../../../Downloads/иконка22.png"; sourceTree = "<group>"; };
-		CECD99B817BF6B9F00F4F783 /* credit-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "credit-cards.png"; path = "../../../../../../../Downloads/credit-cards.png"; sourceTree = "<group>"; };
-		CECD99BC17BF6E8100F4F783 /* rss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rss.png; path = ../../../../../../../Downloads/rss.png; sourceTree = "<group>"; };
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RubinInformation.jpg; sourceTree = "<group>"; };
@@ -202,7 +190,6 @@
 				C5F7B80817B9E51900FB6223 /* SecondViewController.h */,
 				C5F7B80917B9E51900FB6223 /* SecondViewController.m */,
 				CEED208717BCFAE000DA13C6 /* ThirdViewController.h */,
-				CECD99BE17BF6EF800F4F783 /* TabBarController */,
 				CEED208817BCFAE000DA13C6 /* ThirdViewController.m */,
 			);
 			name = UI;
@@ -225,19 +212,6 @@
 				CE2F3EBA17BE161B00B7C607 /* NewsTableViewController.h */,
 			);
 			name = news;
-			sourceTree = "<group>";
-		};
-		CECD99BE17BF6EF800F4F783 /* TabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				CECD99AE17BF5B2800F4F783 /* иконка55-1.png */,
-				CECD99B017BF5C6500F4F783 /* иконка55-2.png */,
-				CECD99B417BF611200F4F783 /* иконка22.png */,
-				CECD99B217BF5F4C00F4F783 /* иконка111.png */,
-				CECD99B817BF6B9F00F4F783 /* credit-cards.png */,
-				CECD99BC17BF6E8100F4F783 /* rss.png */,
-			);
-			name = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,13 +292,7 @@
 			files = (
 				C5F7B80C17B9E51900FB6223 /* Images.xcassets in Resources */,
 				CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */,
-				CECD99B317BF5F4C00F4F783 /* иконка111.png in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
-				CECD99B917BF6B9F00F4F783 /* credit-cards.png in Resources */,
-				CECD99B117BF5C6500F4F783 /* иконка55-2.png in Resources */,
-				CECD99BD17BF6E8100F4F783 /* rss.png in Resources */,
-				CECD99B517BF611200F4F783 /* иконка22.png in Resources */,
-				CECD99AF17BF5B2800F4F783 /* иконка55-1.png in Resources */,
 				C5F7B80417B9E51900FB6223 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
