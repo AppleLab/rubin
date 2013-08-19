@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) id detailItem;
 @property (copy,nonatomic) NSString* someText;
-@property (strong, nonatomic) IBOutlet UITextView *descText;
+@property (strong, nonatomic) IBOutlet UITextView *descText; 
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

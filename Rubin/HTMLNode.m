@@ -13,7 +13,7 @@
 
 -(HTMLNode*)parent
 {
-	return [[HTMLNode alloc] initWithXMLNode:_node->parent];	
+	return [[HTMLNode alloc] initWithXMLNode:_node->parent];	 
 }
 
 -(HTMLNode*)nextSibling {

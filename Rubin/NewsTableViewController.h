@@ -13,6 +13,6 @@
 @interface NewsTableViewController : UITableViewController <NSXMLParserDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong, nonatomic) NewsViewController *newsViewController;
+@property (strong, nonatomic) NewsViewController *newsViewController; 
 
 @end

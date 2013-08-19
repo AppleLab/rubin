@@ -22,7 +22,7 @@
 -(HTMLNode*)html
 {
 	if (_doc == NULL)
-		return NULL;
+		return NULL; 
 	
 	return [[self doc] findChildTag:@"html"];
 }

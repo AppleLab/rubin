@@ -22,7 +22,7 @@
 -(id)initWithData:(NSData*)data error:(NSError**)error;
 -(id)initWithString:(NSString*)string error:(NSError**)error;
 
-//Returns the doc tag
+//Returns the doc tag 
 -(HTMLNode*)doc;
 
 //Returns the body tag
