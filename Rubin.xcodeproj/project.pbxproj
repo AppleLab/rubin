@@ -27,6 +27,11 @@
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
 		CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED208817BCFAE000DA13C6 /* ThirdViewController.m */; };
 		CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */; };
+		CEF780A717C1F035006AE548 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF780A617C1F035006AE548 /* icon1.png */; };
+		CEF780AB17C1F046006AE548 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF780A817C1F046006AE548 /* icon2.png */; };
+		CEF780AC17C1F046006AE548 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF780A917C1F046006AE548 /* icon3.png */; };
+		CEF780AD17C1F046006AE548 /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF780AA17C1F046006AE548 /* icon4.png */; };
+		CEF780AF17C1F04B006AE548 /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF780AE17C1F04B006AE548 /* icon5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RubinInformation.jpg; sourceTree = "<group>"; };
+		CEF780A617C1F035006AE548 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1.png; path = "../../../../Downloads/Attachments_dsherm@mail/icon1.png"; sourceTree = "<group>"; };
+		CEF780A817C1F046006AE548 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = "../../../../Downloads/Attachments_dsherm@mail/icon2.png"; sourceTree = "<group>"; };
+		CEF780A917C1F046006AE548 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon3.png; path = "../../../../Downloads/Attachments_dsherm@mail/icon3.png"; sourceTree = "<group>"; };
+		CEF780AA17C1F046006AE548 /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon4.png; path = "../../../../Downloads/Attachments_dsherm@mail/icon4.png"; sourceTree = "<group>"; };
+		CEF780AE17C1F04B006AE548 /* icon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon5.png; path = "../../../../Downloads/Attachments_dsherm@mail/icon5.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +208,11 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CEF780AE17C1F04B006AE548 /* icon5.png */,
+				CEF780A817C1F046006AE548 /* icon2.png */,
+				CEF780A917C1F046006AE548 /* icon3.png */,
+				CEF780AA17C1F046006AE548 /* icon4.png */,
+				CEF780A617C1F035006AE548 /* icon1.png */,
 				CEBB2C9B17BE3E4000291D45 /* rubin_icon.png */,
 			);
 			name = images;
@@ -291,9 +306,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F7B80C17B9E51900FB6223 /* Images.xcassets in Resources */,
+				CEF780AD17C1F046006AE548 /* icon4.png in Resources */,
 				CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */,
+				CEF780AC17C1F046006AE548 /* icon3.png in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
+				CEF780A717C1F035006AE548 /* icon1.png in Resources */,
 				C5F7B80417B9E51900FB6223 /* Main.storyboard in Resources */,
+				CEF780AB17C1F046006AE548 /* icon2.png in Resources */,
+				CEF780AF17C1F04B006AE548 /* icon5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

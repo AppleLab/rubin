@@ -64,7 +64,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Магазин" image="3_icon" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Магазин" image="icon3.png" id="u1e-5L-l1D"/>
                     <navigationItem key="navigationItem" id="TOR-Pc-Vbm"/>
                     <connections>
                         <outlet property="MyTextView" destination="IRW-iS-sNt" id="Rc9-6A-vV3"/>
@@ -78,7 +78,7 @@
         <scene sceneID="cbP-Cx-BCO">
             <objects>
                 <navigationController definesPresentationContext="YES" id="lLc-N1-Rch" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Билеты" image="credit-cards.png" id="BBm-hg-EkP"/>
+                    <tabBarItem key="tabBarItem" title="Билеты" image="icon4.png" id="BBm-hg-EkP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UAq-rD-hyS">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -143,7 +143,7 @@
                             <outlet property="delegate" destination="oqa-U2-8Hb" id="hxb-sM-90u"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="isz-sw-RU1"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="icon4.png" id="isz-sw-RU1"/>
                     <navigationItem key="navigationItem" title="Tickets" id="3ZP-QC-IcO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fJ-dK-KIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -233,7 +233,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Форум" image="иконка55-2.png" id="34D-Th-oam"/>
+                    <tabBarItem key="tabBarItem" title="Форум" image="icon5.png" id="34D-Th-oam"/>
                     <connections>
                         <outlet property="webView" destination="fBD-IS-Fbr" id="bBf-6g-Tb9"/>
                     </connections>
@@ -261,7 +261,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Команда" image="иконка111.png" id="d8D-db-iod"/>
+                    <tabBarItem key="tabBarItem" title="Команда" image="icon1.png" id="d8D-db-iod"/>
                     <connections>
                         <outlet property="scrollView" destination="a2G-5N-CIH" id="Vyh-Ry-KhY"/>
                     </connections>
@@ -387,7 +387,7 @@
         <scene sceneID="lRY-z1-Lbn">
             <objects>
                 <navigationController definesPresentationContext="YES" id="DOj-q8-SGP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Новости" image="rss.png" id="8hv-Dw-Zgn"/>
+                    <tabBarItem key="tabBarItem" title="Новости" image="icon2.png" id="8hv-Dw-Zgn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IWw-aC-J5n">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -401,11 +401,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3_icon" width="30" height="30"/>
         <image name="credit-cards.png" width="30" height="30"/>
-        <image name="rss.png" width="30" height="30"/>
-        <image name="иконка111.png" width="30" height="30"/>
-        <image name="иконка55-2.png" width="30" height="30"/>
+        <image name="icon1.png" width="30" height="30"/>
+        <image name="icon2.png" width="30" height="30"/>
+        <image name="icon3.png" width="30" height="30"/>
+        <image name="icon4.png" width="30" height="30"/>
+        <image name="icon5.png" width="30" height="30"/>
     </resources>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
