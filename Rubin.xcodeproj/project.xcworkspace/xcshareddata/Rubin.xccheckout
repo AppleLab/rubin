@@ -10,6 +10,8 @@
 	<string>Rubin</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>608B1D33-5301-4B5D-8F88-84061055D283</key>
+		<string>https://github.com/zootreeves/Objective-C-HMTL-Parser.git</string>
 		<key>6C5E881D-552F-49A9-95B5-2AAB6392C774</key>
 		<string>https://github.com/AppleLab/rubin.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>Rubin.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>608B1D33-5301-4B5D-8F88-84061055D283</key>
+		<string>../../../../News/News/Objective-C-HMTL-Parser</string>
 		<key>6C5E881D-552F-49A9-95B5-2AAB6392C774</key>
 		<string>../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>6C5E881D-552F-49A9-95B5-2AAB6392C774</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>608B1D33-5301-4B5D-8F88-84061055D283</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Objective-C-HMTL-Parser</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

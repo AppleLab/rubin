@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsTableViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource> {
-    
-    NSArray* dataArray;
-    
-}
+@class NewsViewController;
 
-@property(nonatomic,retain) NSArray *dataArray;
+@interface NewsTableViewController : UITableViewController <NSXMLParserDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NewsViewController *newsViewController;
+
 @end

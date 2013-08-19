@@ -27,6 +27,9 @@
 		CE09C58317C1F2E200E87ED7 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE09C57F17C1F2E200E87ED7 /* icon3.png */; };
 		CE09C58417C1F2E200E87ED7 /* icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE09C58017C1F2E200E87ED7 /* icon4.png */; };
 		CE09C58617C1F2EC00E87ED7 /* icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE09C58517C1F2EC00E87ED7 /* icon5.png */; };
+		CE09C59917C2302C00E87ED7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE09C59817C2302C00E87ED7 /* libxml2.dylib */; };
+		CE09C59C17C230BF00E87ED7 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09C59B17C230BF00E87ED7 /* HTMLNode.m */; };
+		CE09C59F17C230C900E87ED7 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09C59E17C230C900E87ED7 /* HTMLParser.m */; };
 		CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */; };
 		CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE412A8217BE21B600A5E802 /* NewsViewController.m */; };
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
@@ -73,6 +76,11 @@
 		CE09C57F17C1F2E200E87ED7 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
 		CE09C58017C1F2E200E87ED7 /* icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon4.png; sourceTree = "<group>"; };
 		CE09C58517C1F2EC00E87ED7 /* icon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon5.png; sourceTree = "<group>"; };
+		CE09C59817C2302C00E87ED7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CE09C59A17C230BA00E87ED7 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		CE09C59B17C230BF00E87ED7 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		CE09C59D17C230C400E87ED7 /* HTMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		CE09C59E17C230C900E87ED7 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
 		CE2F3EBA17BE161B00B7C607 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
 		CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		CE412A8117BE21B600A5E802 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE09C59917C2302C00E87ED7 /* libxml2.dylib in Frameworks */,
 				C5F7B7F317B9E51900FB6223 /* CoreGraphics.framework in Frameworks */,
 				C5F7B7F517B9E51900FB6223 /* UIKit.framework in Frameworks */,
 				C5F7B7F117B9E51900FB6223 /* Foundation.framework in Frameworks */,
@@ -129,6 +138,7 @@
 		C5F7B7EF17B9E51900FB6223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE09C59817C2302C00E87ED7 /* libxml2.dylib */,
 				C5F7B7F017B9E51900FB6223 /* Foundation.framework */,
 				C5F7B7F217B9E51900FB6223 /* CoreGraphics.framework */,
 				C5F7B7F417B9E51900FB6223 /* UIKit.framework */,
@@ -205,6 +215,17 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		CE09C59117C22E2D00E87ED7 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				CE09C59D17C230C400E87ED7 /* HTMLParser.h */,
+				CE09C59E17C230C900E87ED7 /* HTMLParser.m */,
+				CE09C59A17C230BA00E87ED7 /* HTMLNode.h */,
+				CE09C59B17C230BF00E87ED7 /* HTMLNode.m */,
+			);
+			name = parser;
+			sourceTree = "<group>";
+		};
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +242,7 @@
 		CE412A8417BE342200A5E802 /* news */ = {
 			isa = PBXGroup;
 			children = (
+				CE09C59117C22E2D00E87ED7 /* parser */,
 				CE412A8217BE21B600A5E802 /* NewsViewController.m */,
 				CE412A8117BE21B600A5E802 /* NewsViewController.h */,
 				CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */,
@@ -337,9 +359,11 @@
 				CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */,
 				CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */,
 				CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */,
+				CE09C59C17C230BF00E87ED7 /* HTMLNode.m in Sources */,
 				C5F7B80717B9E51900FB6223 /* FirstViewController.m in Sources */,
 				C5F7B7FD17B9E51900FB6223 /* main.m in Sources */,
 				CE93BF2417BCF35B00608860 /* Core.m in Sources */,
+				CE09C59F17C230C900E87ED7 /* HTMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +487,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Rubin/Rubin-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -476,6 +501,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Rubin/Rubin-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
