@@ -14,7 +14,11 @@
 @end
 
 @implementation SecondViewController
+
 @synthesize webView;
+@synthesize back;
+@synthesize forward;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,4 +37,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)backButtonPressed:(id)sender {
+    [webView goBack];
+}
+
+- (IBAction)forwardButtonPressed:(id)sender {
+    [webView goForward];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)thisWebView
+{
+    
+	//stop the activity indicator when done loading
+    
+    //canGoBack and canGoForward are properties which indicate if there is
+    //any forward or backward history
+	if(thisWebView.canGoBack == YES)
+	{
+		back.enabled = YES;
+		back.highlighted = YES;
+	}
+	if(thisWebView.canGoForward == YES)
+	{
+		forward.enabled = YES;
+		forward.highlighted = YES;
+	}
+	
+}
 @end

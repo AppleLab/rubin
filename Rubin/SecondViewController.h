@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UIWebViewDelegate>{
+    UIButton *back;
+	UIButton *forward;
+}
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property(nonatomic,retain)IBOutlet UIButton *back;
+@property(nonatomic,retain)IBOutlet UIButton *forward;
+- (IBAction)backButtonPressed:(id)sender;
+- (IBAction)forwardButtonPressed:(id)sender;
+
+
 @end
