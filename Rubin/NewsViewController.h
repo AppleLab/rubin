@@ -12,7 +12,13 @@
 
 @property (strong, nonatomic) id detailItem;
 @property (copy,nonatomic) NSString* someText;
-@property (strong, nonatomic) IBOutlet UITextView *descText; 
+@property (copy,nonatomic) NSString* title;
+@property (copy,nonatomic) NSString* link;
+@property (copy,nonatomic) NSString* imgUrl;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UITextView *descText;
  
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

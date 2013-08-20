@@ -52,7 +52,7 @@
     [parser setShouldResolveExternalEntities:NO];
     [parser parse];
     
-    self.tableView.separatorColor = [UIColor colorWithRed:165.0/255.0 green:42.0/255.0 blue:42.0/255.0 alpha:1];
+    //self.tableView.separatorColor = [UIColor colorWithRed:165.0/255.0 green:42.0/255.0 blue:42.0/255.0 alpha:1];
 
     
 }
@@ -91,6 +91,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     cell.textLabel.text = [[feeds objectAtIndex:indexPath.row] objectForKey: @"title"];
+    cell.textLabel.font = [ UIFont fontWithName: @"Arial" size: 10.0 ];
     return cell;
 }
 
@@ -201,16 +202,14 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        
+    
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        NSString *string = [feeds[indexPath.row] objectForKey: @"text"];
-        [[segue destinationViewController] setSomeText: string];
-        
-        string = [feeds[indexPath.row] objectForKey:@"img"];
-        
-    }
+        [[segue destinationViewController] setSomeText: [feeds[indexPath.row] objectForKey: @"text"]];
+        [[segue destinationViewController] setImgUrl: [feeds[indexPath.row] objectForKey:@"img"] ];
+        [[segue destinationViewController] setLink: [feeds[indexPath.row] objectForKey:@"link"] ];
+        [[segue destinationViewController] setTitle: [feeds[indexPath.row] objectForKey:@"title"] ];
+    
 }
 
 

@@ -45,8 +45,27 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    NSData *data =  [NSData dataWithContentsOfURL:[NSURL URLWithString:self.imgUrl]];
+    UIImage *image = [UIImage imageWithData: data];
+    
+    /*
+    //Если изображение слишком большое
+    if(self.imageView.frame.size.width < image.size.width)
+        image = [UIImage imageWithData:data scale: self.imageView.frame.size.width / image.size.width];
+    */
+    
+    [self.imageView setImage: image];
+    
+    CGRect frame = [self.imageView frame];
+    frame.size.width = image.size.width;
+    [self.imageView setFrame:frame];
+    
     [self.descText setText:self.someText];
     
+    [self.scrollView addSubview: self.descText];
+    [self.scrollView addSubview: self.imageView];
+    
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, self.descText.frame.size.height + 20);
     [self configureView];
 }
 
