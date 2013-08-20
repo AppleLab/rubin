@@ -226,13 +226,6 @@
 			name = parser;
 			sourceTree = "<group>";
 		};
-		CE09C5A017C349DA00E87ED7 /* imageLoader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = imageLoader;
-			sourceTree = "<group>";
-		};
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,7 +242,6 @@
 		CE412A8417BE342200A5E802 /* news */ = {
 			isa = PBXGroup;
 			children = (
-				CE09C5A017C349DA00E87ED7 /* imageLoader */,
 				CE09C59117C22E2D00E87ED7 /* parser */,
 				CE412A8117BE21B600A5E802 /* NewsViewController.h */,
 				CE412A8217BE21B600A5E802 /* NewsViewController.m */,
