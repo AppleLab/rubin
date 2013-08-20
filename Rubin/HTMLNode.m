@@ -11,7 +11,7 @@
 
 @implementation HTMLNode
 
--(HTMLNode*)parent
+-(HTMLNode*)parent 
 {
 	return [[HTMLNode alloc] initWithXMLNode:_node->parent];	 
 }

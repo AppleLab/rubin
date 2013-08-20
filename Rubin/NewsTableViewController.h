@@ -14,5 +14,5 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NewsViewController *newsViewController; 
-
+ 
 @end

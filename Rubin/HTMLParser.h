@@ -10,7 +10,7 @@
 #import <libxml/HTMLparser.h>
 #import "HTMLNode.h"
 
-@class HTMLNode;
+@class HTMLNode; 
 
 @interface HTMLParser : NSObject 
 {

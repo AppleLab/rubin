@@ -12,7 +12,7 @@
 
 @class HTMLParser;
 
-#define ParsingDepthUnlimited 0
+#define ParsingDepthUnlimited 0 
 #define ParsingDepthSame -1 
 #define ParsingDepth size_t
 

@@ -11,7 +11,7 @@
 
 @implementation HTMLParser
 
--(HTMLNode*)doc
+-(HTMLNode*)doc 
 {
 	if (_doc == NULL)
 		return NULL;

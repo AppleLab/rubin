@@ -39,7 +39,7 @@
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
 }
-
+ 
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
