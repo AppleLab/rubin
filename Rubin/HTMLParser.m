@@ -11,7 +11,7 @@
 
 @implementation HTMLParser
 
--(HTMLNode*)doc 
+-(HTMLNode*)doc
 {
 	if (_doc == NULL)
 		return NULL;
@@ -22,7 +22,7 @@
 -(HTMLNode*)html
 {
 	if (_doc == NULL)
-		return NULL; 
+		return NULL;
 	
 	return [[self doc] findChildTag:@"html"];
 }
@@ -31,7 +31,7 @@
 {
 	if (_doc == NULL)
 		return NULL;
-
+    
 	return [[self doc] findChildTag:@"head"];
 }
 
@@ -44,7 +44,7 @@
 }
 
 -(id)initWithString:(NSString*)string error:(NSError**)error
-{ 
+{
 	if (self = [super init])
 	{
 		_doc = NULL;
@@ -60,7 +60,7 @@
 			optionsHtml = optionsHtml | HTML_PARSE_NOWARNING;
 			_doc = htmlReadDoc ((xmlChar*)[string UTF8String], NULL, enc, optionsHtml);
 		}
-		else 
+		else
 		{
 			if (error) {
 				*error = [NSError errorWithDomain:@"HTMLParserdomain" code:1 userInfo:nil];
@@ -76,7 +76,7 @@
 	if (self = [super init])
 	{
 		_doc = NULL;
-
+        
 		if (data)
 		{
 			CFStringEncoding cfenc = CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding);
@@ -85,17 +85,17 @@
 			//_doc = htmlParseDoc((xmlChar*)[data bytes], enc);
 			
 			_doc = htmlReadDoc((xmlChar*)[data bytes],
-							 "",
-							enc,
-							XML_PARSE_NOERROR | XML_PARSE_NOWARNING);
+                               "",
+                               enc,
+                               XML_PARSE_NOERROR | XML_PARSE_NOWARNING);
 		}
 		else
 		{
-			if (error) 
+			if (error)
 			{
 				*error = [NSError errorWithDomain:@"HTMLParserdomain" code:1 userInfo:nil];
 			}
-
+            
 		}
 	}
 	
@@ -106,7 +106,7 @@
 {
 	
 	NSData * _data = [[NSData alloc] initWithContentsOfURL:url options:0 error:error];
-
+    
 	if (_data == nil || *error)
 	{
 		return nil;
@@ -124,7 +124,7 @@
 	{
 		xmlFreeDoc(_doc);
 	}
-
+    
 }
 
 @end

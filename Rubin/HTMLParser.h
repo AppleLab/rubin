@@ -10,11 +10,11 @@
 #import <libxml/HTMLparser.h>
 #import "HTMLNode.h"
 
-@class HTMLNode; 
+@class HTMLNode;
 
-@interface HTMLParser : NSObject 
+@interface HTMLParser : NSObject
 {
-	@public
+@public
 	htmlDocPtr _doc;
 }
 
@@ -22,7 +22,7 @@
 -(id)initWithData:(NSData*)data error:(NSError**)error;
 -(id)initWithString:(NSString*)string error:(NSError**)error;
 
-//Returns the doc tag 
+//Returns the doc tag
 -(HTMLNode*)doc;
 
 //Returns the body tag
