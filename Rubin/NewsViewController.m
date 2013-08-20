@@ -31,6 +31,39 @@
     }
 }
 
+- (void) printInfo
+{
+    CGRect frame;
+    //Вывод картинки
+    if(self.imgUrl.length > 5)
+    {
+        NSData *data =  [NSData dataWithContentsOfURL:[NSURL URLWithString:self.imgUrl]];
+        UIImage *image = [UIImage imageWithData: data];
+        
+        if(self.scrollView.frame.size.width < image.size.width)
+            image = [UIImage imageWithData:data scale: 2];
+        
+        frame = CGRectMake( (self.scrollView.frame.size.width - image.size.width) / 2 , 0, image.size.width, image.size.height);
+        self.imageView = [[UIImageView alloc] init];
+        self.imageView.image = image;
+        [self.imageView setFrame: frame];
+        [self.scrollView addSubview: self.imageView];
+    }
+    
+    //Вывод текста
+    self.descText = [[UITextView alloc] init];
+    [self.descText setText: self.someText];
+    
+    if(self.imgUrl.length > 5)
+        frame = CGRectMake( 0, self.imageView.frame.size.height + 5, self.scrollView.frame.size.width, self.scrollView.frame.size.height - self.imageView.frame.size.height + 5);
+    else
+        frame = CGRectMake( 0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height);
+    
+    [self.descText setFrame: frame];
+    [self.descText setScrollEnabled: NO];
+    [self.scrollView addSubview: self.descText];
+}
+
 - (void)configureView
 {
     // Update the user interface for the detail item.
@@ -44,29 +77,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self printInfo];
     
-    NSData *data =  [NSData dataWithContentsOfURL:[NSURL URLWithString:self.imgUrl]];
-    UIImage *image = [UIImage imageWithData: data];
+    CGRect scrollViewFrame = self.scrollView.frame;
+    scrollViewFrame.size.height = self.descText.frame.size.height + self.imageView.frame.size.height + 100;
+
+    [self.scrollView setContentSize: scrollViewFrame.size];
     
-    /*
-    //Если изображение слишком большое
-    if(self.imageView.frame.size.width < image.size.width)
-        image = [UIImage imageWithData:data scale: self.imageView.frame.size.width / image.size.width];
-    */
-    
-    
-    CGRect frame = [self.imageView frame];
-    frame.size.width = image.size.width;
-    frame.size.height = image.size.height;
-    [self.imageView setFrame:frame];
-    
-    [self.descText setText:self.someText];
-    [self.imageView setImage: image];
-    
-    [self.scrollView addSubview: self.descText];
-    [self.scrollView addSubview: self.imageView];
-    
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, self.descText.frame.size.height + 20);
     [self configureView];
 }
 
