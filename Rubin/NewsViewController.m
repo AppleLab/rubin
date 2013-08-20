@@ -54,13 +54,14 @@
         image = [UIImage imageWithData:data scale: self.imageView.frame.size.width / image.size.width];
     */
     
-    [self.imageView setImage: image];
     
     CGRect frame = [self.imageView frame];
     frame.size.width = image.size.width;
+    frame.size.height = image.size.height;
     [self.imageView setFrame:frame];
     
     [self.descText setText:self.someText];
+    [self.imageView setImage: image];
     
     [self.scrollView addSubview: self.descText];
     [self.scrollView addSubview: self.imageView];
