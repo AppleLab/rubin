@@ -22,6 +22,17 @@
 		C5F7B81517B9E51900FB6223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7F417B9E51900FB6223 /* UIKit.framework */; };
 		C5F7B81D17B9E51900FB6223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5F7B81B17B9E51900FB6223 /* InfoPlist.strings */; };
 		C5F7B81F17B9E51900FB6223 /* RubinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B81E17B9E51900FB6223 /* RubinTests.m */; };
+		CE01D10F17C39F4F0028B394 /* ShopCompletePurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01D10617C39F4F0028B394 /* ShopCompletePurchaseViewController.m */; };
+		CE01D11017C39F4F0028B394 /* ShopDetailViewContollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01D10817C39F4F0028B394 /* ShopDetailViewContollerViewController.m */; };
+		CE01D11117C39F4F0028B394 /* ShopPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01D10A17C39F4F0028B394 /* ShopPurchaseViewController.m */; };
+		CE01D11217C39F4F0028B394 /* ShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01D10C17C39F4F0028B394 /* ShopTableViewCell.m */; };
+		CE01D11317C39F4F0028B394 /* ShopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01D10E17C39F4F0028B394 /* ShopTableViewController.m */; };
+		CE01D11D17C39FB50028B394 /* item1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01D11717C39FB50028B394 /* item1.png */; };
+		CE01D11E17C39FB50028B394 /* item2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01D11817C39FB50028B394 /* item2.png */; };
+		CE01D11F17C39FB50028B394 /* item3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01D11917C39FB50028B394 /* item3.png */; };
+		CE01D12017C39FB50028B394 /* item4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01D11A17C39FB50028B394 /* item4.png */; };
+		CE01D12117C39FB50028B394 /* item5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01D11B17C39FB50028B394 /* item5.png */; };
+		CE01D12217C39FB50028B394 /* item6.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01D11C17C39FB50028B394 /* item6.png */; };
 		CE09C58117C1F2E200E87ED7 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE09C57D17C1F2E200E87ED7 /* icon1.png */; };
 		CE09C58217C1F2E200E87ED7 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE09C57E17C1F2E200E87ED7 /* icon2.png */; };
 		CE09C58317C1F2E200E87ED7 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE09C57F17C1F2E200E87ED7 /* icon3.png */; };
@@ -30,6 +41,7 @@
 		CE09C59917C2302C00E87ED7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE09C59817C2302C00E87ED7 /* libxml2.dylib */; };
 		CE09C5AE17C380E500E87ED7 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09C5AD17C380E500E87ED7 /* HTMLParser.m */; };
 		CE09C5B117C3813F00E87ED7 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09C5B017C3813F00E87ED7 /* HTMLNode.m */; };
+		CE1E78DA17C3A2DC0047E936 /* ShopUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E78D917C3A2DC0047E936 /* ShopUtils.m */; };
 		CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */; };
 		CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE412A8217BE21B600A5E802 /* NewsViewController.m */; };
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
@@ -71,6 +83,22 @@
 		C5F7B81E17B9E51900FB6223 /* RubinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubinTests.m; sourceTree = "<group>"; };
 		C5F7B82917B9E5F000FB6223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C5F7B82A17B9E5F000FB6223 /* Core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		CE01D10517C39F4F0028B394 /* ShopCompletePurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCompletePurchaseViewController.h; sourceTree = "<group>"; };
+		CE01D10617C39F4F0028B394 /* ShopCompletePurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCompletePurchaseViewController.m; sourceTree = "<group>"; };
+		CE01D10717C39F4F0028B394 /* ShopDetailViewContollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewContollerViewController.h; sourceTree = "<group>"; };
+		CE01D10817C39F4F0028B394 /* ShopDetailViewContollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewContollerViewController.m; sourceTree = "<group>"; };
+		CE01D10917C39F4F0028B394 /* ShopPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopPurchaseViewController.h; sourceTree = "<group>"; };
+		CE01D10A17C39F4F0028B394 /* ShopPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopPurchaseViewController.m; sourceTree = "<group>"; };
+		CE01D10B17C39F4F0028B394 /* ShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTableViewCell.h; sourceTree = "<group>"; };
+		CE01D10C17C39F4F0028B394 /* ShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopTableViewCell.m; sourceTree = "<group>"; };
+		CE01D10D17C39F4F0028B394 /* ShopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTableViewController.h; sourceTree = "<group>"; };
+		CE01D10E17C39F4F0028B394 /* ShopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopTableViewController.m; sourceTree = "<group>"; };
+		CE01D11717C39FB50028B394 /* item1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item1.png; path = images/items_for_shop/item1.png; sourceTree = "<group>"; };
+		CE01D11817C39FB50028B394 /* item2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item2.png; path = images/items_for_shop/item2.png; sourceTree = "<group>"; };
+		CE01D11917C39FB50028B394 /* item3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item3.png; path = images/items_for_shop/item3.png; sourceTree = "<group>"; };
+		CE01D11A17C39FB50028B394 /* item4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item4.png; path = images/items_for_shop/item4.png; sourceTree = "<group>"; };
+		CE01D11B17C39FB50028B394 /* item5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item5.png; path = images/items_for_shop/item5.png; sourceTree = "<group>"; };
+		CE01D11C17C39FB50028B394 /* item6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item6.png; path = images/items_for_shop/item6.png; sourceTree = "<group>"; };
 		CE09C57D17C1F2E200E87ED7 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
 		CE09C57E17C1F2E200E87ED7 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		CE09C57F17C1F2E200E87ED7 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
@@ -81,6 +109,8 @@
 		CE09C5AD17C380E500E87ED7 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
 		CE09C5AF17C3813F00E87ED7 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
 		CE09C5B017C3813F00E87ED7 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		CE1E78D817C3A2DC0047E936 /* ShopUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopUtils.h; sourceTree = "<group>"; };
+		CE1E78D917C3A2DC0047E936 /* ShopUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopUtils.m; sourceTree = "<group>"; };
 		CE2F3EBA17BE161B00B7C607 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
 		CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		CE412A8117BE21B600A5E802 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
@@ -193,6 +223,8 @@
 		C5F7B82817B9E5BA00FB6223 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CE1E78D817C3A2DC0047E936 /* ShopUtils.h */,
+				CE1E78D917C3A2DC0047E936 /* ShopUtils.m */,
 				C5F7B82917B9E5F000FB6223 /* Core.h */,
 				C5F7B82A17B9E5F000FB6223 /* Core.m */,
 			);
@@ -202,6 +234,7 @@
 		C5F7B82B17B9E60D00FB6223 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE01D10417C39DA50028B394 /* ShopControllers */,
 				CE412A8417BE342200A5E802 /* news */,
 				CE2F3EBD17BE1CFA00B7C607 /* images */,
 				C5F7B80217B9E51900FB6223 /* Main.storyboard */,
@@ -213,6 +246,36 @@
 				CEED208817BCFAE000DA13C6 /* ThirdViewController.m */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		CE01D10417C39DA50028B394 /* ShopControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE01D10517C39F4F0028B394 /* ShopCompletePurchaseViewController.h */,
+				CE01D10617C39F4F0028B394 /* ShopCompletePurchaseViewController.m */,
+				CE01D10717C39F4F0028B394 /* ShopDetailViewContollerViewController.h */,
+				CE01D10817C39F4F0028B394 /* ShopDetailViewContollerViewController.m */,
+				CE01D10917C39F4F0028B394 /* ShopPurchaseViewController.h */,
+				CE01D10A17C39F4F0028B394 /* ShopPurchaseViewController.m */,
+				CE01D10B17C39F4F0028B394 /* ShopTableViewCell.h */,
+				CE01D10C17C39F4F0028B394 /* ShopTableViewCell.m */,
+				CE01D10D17C39F4F0028B394 /* ShopTableViewController.h */,
+				CE01D10E17C39F4F0028B394 /* ShopTableViewController.m */,
+			);
+			name = ShopControllers;
+			sourceTree = "<group>";
+		};
+		CE01D11617C39F780028B394 /* shop */ = {
+			isa = PBXGroup;
+			children = (
+				CE01D11717C39FB50028B394 /* item1.png */,
+				CE01D11817C39FB50028B394 /* item2.png */,
+				CE01D11917C39FB50028B394 /* item3.png */,
+				CE01D11A17C39FB50028B394 /* item4.png */,
+				CE01D11B17C39FB50028B394 /* item5.png */,
+				CE01D11C17C39FB50028B394 /* item6.png */,
+			);
+			name = shop;
 			sourceTree = "<group>";
 		};
 		CE09C59117C22E2D00E87ED7 /* parser */ = {
@@ -229,6 +292,7 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CE01D11617C39F780028B394 /* shop */,
 				CE09C57D17C1F2E200E87ED7 /* icon1.png */,
 				CE09C57E17C1F2E200E87ED7 /* icon2.png */,
 				CE09C57F17C1F2E200E87ED7 /* icon3.png */,
@@ -328,13 +392,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F7B80C17B9E51900FB6223 /* Images.xcassets in Resources */,
+				CE01D12017C39FB50028B394 /* item4.png in Resources */,
 				CE09C58417C1F2E200E87ED7 /* icon4.png in Resources */,
+				CE01D11F17C39FB50028B394 /* item3.png in Resources */,
 				CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */,
 				CE09C58317C1F2E200E87ED7 /* icon3.png in Resources */,
+				CE01D12117C39FB50028B394 /* item5.png in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
+				CE01D12217C39FB50028B394 /* item6.png in Resources */,
 				CE09C58117C1F2E200E87ED7 /* icon1.png in Resources */,
 				C5F7B80417B9E51900FB6223 /* Main.storyboard in Resources */,
+				CE01D11E17C39FB50028B394 /* item2.png in Resources */,
 				CE09C58217C1F2E200E87ED7 /* icon2.png in Resources */,
+				CE01D11D17C39FB50028B394 /* item1.png in Resources */,
 				CE09C58617C1F2EC00E87ED7 /* icon5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,15 +424,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE01D11117C39F4F0028B394 /* ShopPurchaseViewController.m in Sources */,
+				CE1E78DA17C3A2DC0047E936 /* ShopUtils.m in Sources */,
 				CE09C5B117C3813F00E87ED7 /* HTMLNode.m in Sources */,
 				C5F7B80A17B9E51900FB6223 /* SecondViewController.m in Sources */,
+				CE01D11217C39F4F0028B394 /* ShopTableViewCell.m in Sources */,
 				C5F7B80117B9E51900FB6223 /* AppDelegate.m in Sources */,
+				CE01D11017C39F4F0028B394 /* ShopDetailViewContollerViewController.m in Sources */,
 				CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */,
 				CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */,
 				CE09C5AE17C380E500E87ED7 /* HTMLParser.m in Sources */,
 				CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */,
 				C5F7B80717B9E51900FB6223 /* FirstViewController.m in Sources */,
 				C5F7B7FD17B9E51900FB6223 /* main.m in Sources */,
+				CE01D11317C39F4F0028B394 /* ShopTableViewController.m in Sources */,
+				CE01D10F17C39F4F0028B394 /* ShopCompletePurchaseViewController.m in Sources */,
 				CE93BF2417BCF35B00608860 /* Core.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,4 +12,5 @@
 
 +(Core*) core;
 +(NSURL*) getForumURL;
+
 @end
