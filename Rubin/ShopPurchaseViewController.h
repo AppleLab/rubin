@@ -20,7 +20,14 @@
 @property (nonatomic, retain) IBOutlet UITextField *textFieldPhone;
 @property (nonatomic, retain) IBOutlet UITextField *textFieldComment;
 
--(IBAction)btnBuyClick;
+- (IBAction)BeginEditing:(UITextField *)sender;
+- (void)setViewMovedUp:(BOOL)movedUp;
+- (void)keyboardWillShow:(NSNotification *)notif;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+
+- (IBAction)btnBuyClick;
+- (IBAction)textFieldReturn:(id)sender;
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 

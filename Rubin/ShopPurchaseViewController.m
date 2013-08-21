@@ -14,6 +14,7 @@
 
 @implementation ShopPurchaseViewController {
     bool successfulPurchase;
+    NSInteger scroll_value;
 }
 
 @synthesize itemID;
@@ -95,10 +96,87 @@
     
 }
 
+// Часть, которая отвечает за изменение экрана при вводе с клавиатуры
+
+-(IBAction)textFieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+    if (([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder]) && self.view.frame.origin.y >= 0)
+    {
+        [self setViewMovedUp:YES];
+    }
+    else if (!([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder]) && self.view.frame.origin.y < 0)
+    {
+        [self setViewMovedUp:NO];
+    }
+}
+
 // Закрывает клавиатуру после нажататия на экран
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
     [super touchesBegan:touches withEvent:event];
+    
+    if (([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder]) && self.view.frame.origin.y >= 0)
+    {
+        [self setViewMovedUp:YES];
+    }
+    else if (!([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder]) && self.view.frame.origin.y < 0)
+    {
+        [self setViewMovedUp:NO];
+    }
 }
+
+-(IBAction)BeginEditing:(UITextField *)sender
+{
+    if  (self.view.frame.origin.y >= 0 && ([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder])){
+        scroll_value = 140;
+        [self setViewMovedUp:YES];
+    } else if (self.view.frame.origin.y < 0 &&  !([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder])){
+        [self setViewMovedUp:NO];
+    }
+}
+
+-(void)setViewMovedUp:(BOOL)movedUp
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.2];
+    
+    CGRect rect = self.view.frame;
+    if (movedUp)
+    {
+        rect.origin.y -= scroll_value;
+        rect.size.height += scroll_value;
+    }
+    else
+    {
+        rect.origin.y += scroll_value;
+        rect.size.height -= scroll_value;
+    }
+    self.view.frame = rect;
+    [UIView commitAnimations];
+}
+
+- (void)keyboardWillShow:(NSNotification *)notif
+{
+    if (([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder]) && self.view.frame.origin.y >= 0)
+    {
+        [self setViewMovedUp:YES];
+    } else if (!([textFieldComment isFirstResponder] || [textFieldPhone isFirstResponder] || [textFieldAddress isFirstResponder] || [textFieldName isFirstResponder]) && self.view.frame.origin.y < 0)
+    {
+        [self setViewMovedUp:NO];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification object:self.view.window];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+}
+
 
 @end

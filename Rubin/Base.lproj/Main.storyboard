@@ -542,6 +542,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="BeginEditing:" destination="d6w-Wu-EW2" eventType="editingDidBegin" id="uJ7-KM-HM7"/>
+                                    <action selector="textFieldReturn:" destination="d6w-Wu-EW2" eventType="editingDidEndOnExit" id="ddn-MK-s1w"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ФИО:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AH-i6-nII">
                                 <rect key="frame" x="81" y="206" width="151" height="21"/>
@@ -554,6 +558,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="BeginEditing:" destination="d6w-Wu-EW2" eventType="editingDidBegin" id="337-Eq-4hM"/>
+                                    <action selector="textFieldReturn:" destination="d6w-Wu-EW2" eventType="editingDidEndOnExit" id="R7L-6L-Lxa"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Телефон:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gl-GR-A7G">
                                 <rect key="frame" x="85" y="273" width="151" height="21"/>
@@ -572,6 +580,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <action selector="BeginEditing:" destination="d6w-Wu-EW2" eventType="editingDidBegin" id="71Q-0e-nkA"/>
+                                    <action selector="textFieldReturn:" destination="d6w-Wu-EW2" eventType="editingDidEndOnExit" id="xnj-SC-EXJ"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Комментарий:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcV-a4-LLl">
                                 <rect key="frame" x="85" y="336" width="151" height="21"/>
@@ -584,6 +596,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="BeginEditing:" destination="d6w-Wu-EW2" eventType="editingDidBegin" id="Djb-Ae-efO"/>
+                                    <action selector="textFieldReturn:" destination="d6w-Wu-EW2" eventType="editingDidEndOnExit" id="ceK-uy-Urx"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6P-pV-4ps">
                                 <rect key="frame" x="122" y="403" width="68" height="30"/>
