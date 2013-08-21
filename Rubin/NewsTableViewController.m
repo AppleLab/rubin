@@ -11,6 +11,7 @@
 #import "HTMLParser.h"
 
 @interface NewsTableViewController () {
+    UIAlertView *alert;
     NSMutableArray *_objects;
     NSXMLParser *parser;
     NSMutableArray *feeds;
@@ -35,21 +36,30 @@
     [super awakeFromNib];
 }
 
+-(void)loadAlert
+{
+    alert = [[UIAlertView alloc] initWithTitle:@"Загрузка" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
+    [alert show];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadAlert];
+    
     self.newsViewController = (NewsViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     feeds = [[NSMutableArray alloc] init];
+    
+    [self performSelectorInBackground:@selector(startParse) withObject: nil];
+}
+
+- (void) startParse{
     NSURL* myUrl = [NSURL URLWithString:@"http://fcrubin.ru/novosti-komandy/novosti/novosti-komandy/rss.html"];
     parser = [[NSXMLParser alloc] initWithContentsOfURL:myUrl];
     [parser setDelegate:self];
     [parser setShouldResolveExternalEntities:NO];
     [parser parse];
-    
-    //self.tableView.separatorColor = [UIColor colorWithRed:165.0/255.0 green:42.0/255.0 blue:42.0/255.0 alpha:1];
-
-    
 }
 
 - (void)viewDidUnload{
@@ -167,6 +177,7 @@
 }
 - (void)parserDidEndDocument:(NSXMLParser *)parser{
     [self.tableView reloadData];
+    [alert dismissWithClickedButtonIndex:0 animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
