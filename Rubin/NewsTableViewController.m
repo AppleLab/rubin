@@ -11,6 +11,7 @@
 #import "HTMLParser.h"
 
 @interface NewsTableViewController () {
+    NSTimer *timer;
     UIAlertView *alert;
     NSMutableArray *_objects;
     NSXMLParser *parser;
@@ -36,22 +37,35 @@
     [super awakeFromNib];
 }
 
+- (void) startLoadNews {
+    [self performSelectorInBackground:@selector(startParse) withObject: nil];
+    [self loadAlert];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval: 3600
+                                             target:self
+                                           selector:@selector(tick:)
+                                           userInfo:nil
+                                            repeats:YES];
+}
+
+- (void) tick:(NSTimer *) timer {
+    [self performSelectorInBackground:@selector(startParse) withObject: nil];
+}
+
 -(void)loadAlert
 {
-    alert = [[UIAlertView alloc] initWithTitle:@"Загрузка" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
+    alert = [[UIAlertView alloc] initWithTitle:@"Загрузка..." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
     [alert show];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self loadAlert];
+    [self startLoadNews];
     
     self.newsViewController = (NewsViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     feeds = [[NSMutableArray alloc] init];
-    
-    [self performSelectorInBackground:@selector(startParse) withObject: nil];
 }
 
 - (void) startParse{
@@ -64,8 +78,9 @@
 
 - (void)viewDidUnload{
     [super viewDidUnload];
+    [timer invalidate];
+    timer = nil;
 }
-
 
 - (void)insertNewObject:(id)sender
 {
