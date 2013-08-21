@@ -34,7 +34,7 @@
 - (void) printInfo
 {
     CGRect frame;
-    //Вывод картинки
+    //Вывод картинки если она есть
     if(self.imgUrl.length > 5)
     {
         NSData *data =  [NSData dataWithContentsOfURL:[NSURL URLWithString:self.imgUrl]];
@@ -54,6 +54,7 @@
     self.descText = [[UITextView alloc] init];
     [self.descText setText: self.someText];
     
+    //Если картинка есть, то текст идет после картинки, иначе сверху выводится текст
     if(self.imgUrl.length > 5)
         frame = CGRectMake( 0, self.imageView.frame.size.height + 5, self.scrollView.frame.size.width, self.scrollView.frame.size.height - self.imageView.frame.size.height + 5);
     else
@@ -61,6 +62,7 @@
     
     [self.descText setFrame: frame];
     [self.descText setScrollEnabled: NO];
+    [self.descText setEditable: NO];
     [self.scrollView addSubview: self.descText];
 }
 
@@ -80,8 +82,7 @@
     [self printInfo];
     
     CGRect scrollViewFrame = self.scrollView.frame;
-    scrollViewFrame.size.height = self.descText.frame.size.height + self.imageView.frame.size.height + 100;
-
+    scrollViewFrame.size.height = self.descText.frame.size.height + self.imageView.frame.size.height;
     [self.scrollView setContentSize: scrollViewFrame.size];
     
     [self configureView];
