@@ -111,7 +111,6 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     cell.textLabel.text = [[feeds objectAtIndex:indexPath.row] objectForKey: @"title"];
-    cell.textLabel.font = [ UIFont fontWithName: @"Arial" size: 10.0 ];
     return cell;
 }
 

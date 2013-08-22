@@ -63,6 +63,8 @@
     [self.descText setFrame: frame];
     [self.descText setScrollEnabled: NO];
     [self.descText setEditable: NO];
+    [self.descText setFont: [ UIFont fontWithName: @"Arial" size: 13.0 ] ];
+
     [self.scrollView addSubview: self.descText];
 }
 
