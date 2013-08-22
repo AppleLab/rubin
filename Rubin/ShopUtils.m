@@ -36,7 +36,20 @@
     UIImage *imageForItem6 = [UIImage imageNamed:@"item6.png"];
     NSDictionary *item6 = [NSDictionary dictionaryWithObjectsAndKeys:nameForItem6, @"name", imageForItem6, @"image", @"578", @"cost", @"6", @"id", nil];
     
-    NSArray *currentArray = [NSArray arrayWithObjects:item1, item2, item3, item4, item5, item6, nil];
+    NSString *nameForItem7 = @"Брелок / Вперед Рубин";
+    UIImage *imageForItem7 = [UIImage imageNamed:@"item7.png"];
+    NSDictionary *item7 = [NSDictionary dictionaryWithObjectsAndKeys:nameForItem7, @"name", imageForItem7, @"image", @"158", @"cost", @"7", @"id", nil];
+    
+    NSString *nameForItem8 = @"Футболка / Rubin";
+    UIImage *imageForItem8 = [UIImage imageNamed:@"item8.png"];
+    NSDictionary *item8 = [NSDictionary dictionaryWithObjectsAndKeys:nameForItem8, @"name", imageForItem8, @"image", @"683", @"cost", @"8", @"id", nil];
+    
+    NSString *nameForItem9 = @"Футболка / Эмблема Рубина";
+    UIImage *imageForItem9 = [UIImage imageNamed:@"item9.png"];
+    NSDictionary *item9 = [NSDictionary dictionaryWithObjectsAndKeys:nameForItem9, @"name", imageForItem9, @"image", @"823", @"cost", @"9", @"id", nil];
+    
+    NSArray *currentArray = [NSArray arrayWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
+    
     return currentArray;
 }
 
