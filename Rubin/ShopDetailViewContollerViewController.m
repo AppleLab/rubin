@@ -39,7 +39,7 @@
     self.itemLabel.text = [itemDetailModel objectAtIndex:0];
     self.itemID.text = [itemDetailModel objectAtIndex:1];
     self.itemImage.image = [itemDetailModel objectAtIndex:2];
-    self.itemCost.text = [itemDetailModel objectAtIndex:3];
+    self.itemCost.text = [NSString stringWithFormat:@"%@%@", [itemDetailModel objectAtIndex:3], @" руб."];
 }
 
 - (void)didReceiveMemoryWarning
