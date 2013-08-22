@@ -53,16 +53,65 @@
     return currentArray;
 }
 
-+ (void)simpleSendingPurshaceToServer:(NSDictionary *)purchaseInfo
+// отправляет информацию от текущем заказе purchaseInfo в виде NSString на сервер
+// отправляемая строка имеет вид "id, name, address, payment, shipping, phone, comment"
+// название "name.txt"
++ (BOOL)simpleSendingPurshaceToServer:(NSDictionary *)purchaseInfo
 {
-    NSLog(@"%@",@"Loooooogs");
-    NSLog(@"%@",[purchaseInfo objectForKey:@"id"]);
-    NSLog(@"%@",[purchaseInfo objectForKey:@"payment"]);
-    NSLog(@"%@",[purchaseInfo objectForKey:@"shipping"]);
-    NSLog(@"%@",[purchaseInfo objectForKey:@"address"]);
-    NSLog(@"%@",[purchaseInfo objectForKey:@"name"]);
-    NSLog(@"%@",[purchaseInfo objectForKey:@"phone"]);
-    NSLog(@"%@",[purchaseInfo objectForKey:@"comment"]);
+    // подготовка данных перед отправкой на сервер
+    NSMutableString *mutablePurchaseInfo = [NSMutableString stringWithCapacity:100];
+    [mutablePurchaseInfo appendString:[purchaseInfo objectForKey:@"id"]];
+    [mutablePurchaseInfo appendString:@";"];
+    [mutablePurchaseInfo appendString:[purchaseInfo objectForKey:@"name"]];
+    [mutablePurchaseInfo appendString:@";"];
+    [mutablePurchaseInfo appendString:[purchaseInfo objectForKey:@"address"]];
+    [mutablePurchaseInfo appendString:@";"];
+    [mutablePurchaseInfo appendString:[purchaseInfo objectForKey:@"payment"]];
+    [mutablePurchaseInfo appendString:@";"];
+    [mutablePurchaseInfo appendString:[purchaseInfo objectForKey:@"shipping"]];
+    [mutablePurchaseInfo appendString:@";"];
+    [mutablePurchaseInfo appendString:[purchaseInfo objectForKey:@"phone"]];
+    [mutablePurchaseInfo appendString:@";"];
+    [mutablePurchaseInfo appendString:[purchaseInfo objectForKey:@"comment"]];
+    [mutablePurchaseInfo appendString:@";"];
+    
+    NSString *stringPurchaseInfo = [NSString stringWithString:mutablePurchaseInfo];
+    NSData *data = [stringPurchaseInfo dataUsingEncoding:NSUTF8StringEncoding];
+    
+    // отправка на сервер
+    NSString *fileName = [NSString stringWithFormat:@"%@%@", [purchaseInfo objectForKey:@"name"], @".txt" ];
+    bool flag = [self uploadDataToServer:data filename:fileName];
+    
+    return flag;
 }
+
+// Отправка NSData файла на сервер
++ (BOOL)uploadDataToServer:(NSData *)uploadData filename:(NSString *)filename
+{
+    
+    NSString *urlString = @"http://192.168.25.127/index.php";
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString:urlString]];
+    [request setHTTPMethod:@"POST"];
+    
+    NSString *boundary = @"---------------------------14737809831466499882746641449";
+    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+    [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+    
+    NSMutableData *body = [NSMutableData data];
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithString:[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"userfile\"; filename=\"%@\"\r\n",filename]] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[NSData dataWithData:uploadData]];
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPBody:body];
+    
+    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
+    
+    return ([returnString isEqualToString:@"OK"]);
+}
+
 
 @end

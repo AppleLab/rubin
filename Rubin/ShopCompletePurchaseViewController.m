@@ -15,6 +15,7 @@
 @implementation ShopCompletePurchaseViewController
 
 @synthesize successfulPurhase;
+@synthesize successfulUploadToServer;
 @synthesize label1;
 @synthesize label2;
 
@@ -32,9 +33,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     if (successfulPurhase) {
-        self.navigationItem.hidesBackButton = YES;
-        label1.text = @"Спасибо";
-        label2.text = @"за покупку";
+        if (successfulUploadToServer) {
+            self.navigationItem.hidesBackButton = YES;
+            label1.text = @"Спасибо";
+            label2.text = @"за покупку";
+        } else {
+            self.navigationItem.hidesBackButton = YES;
+            label1.text = @"Извините";
+            label2.text = @"сервер не доступен";
+        }
     } else {
         label1.text = @"Ошибка";
         label2.text = @"Вы заполнили не все данные";

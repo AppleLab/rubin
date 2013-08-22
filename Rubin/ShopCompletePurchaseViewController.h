@@ -11,6 +11,7 @@
 @interface ShopCompletePurchaseViewController : UIViewController
 
 @property (assign) bool successfulPurhase;
+@property (assign) bool successfulUploadToServer;
 
 @property (nonatomic, retain) IBOutlet UILabel *label1;
 @property (nonatomic, retain) IBOutlet UILabel *label2;

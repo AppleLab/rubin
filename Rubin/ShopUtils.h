@@ -14,6 +14,7 @@
 // Каждый item состоит из dictionary с полями: "name", "image", "cost", "id"
 + (NSArray *) simpleItemsForShop;
 
-+ (void) simpleSendingPurshaceToServer: (NSDictionary *) purchaseInfo;
++ (BOOL) simpleSendingPurshaceToServer: (NSDictionary *) purchaseInfo;
++ (BOOL)uploadDataToServer:(NSData *)data filename:(NSString *)filename;
 
 @end

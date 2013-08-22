@@ -14,6 +14,7 @@
 
 @implementation ShopPurchaseViewController {
     bool successfulPurchase;
+    bool successfulUploadToServer;
     NSInteger scroll_value;
 }
 
@@ -82,16 +83,17 @@
         NSDictionary *totalInfoFromPurchase = [NSDictionary dictionaryWithObjectsAndKeys:itemID, @"id", typeOfPayment, @"payment", typeOfShipping, @"shipping", address, @"address", name, @"name", phone, @"phone", comment, @"comment",nil];
         
         // Отправка заказа на сервер
-        [ShopUtils simpleSendingPurshaceToServer:totalInfoFromPurchase];
+        successfulUploadToServer = [ShopUtils simpleSendingPurshaceToServer:totalInfoFromPurchase];
     }
 }
 
-// Метод обмена между PurchaseView и CompletePurchaseView, отправляется true если все поля заполнены
+// Метод обмена между PurchaseView и CompletePurchaseView, отправляется true если все поля заполнены, true если отправка на сервер удачная
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"CompletePurchase"]) {
         ShopCompletePurchaseViewController *completePurchaseViewController = [segue destinationViewController];
         completePurchaseViewController.successfulPurhase = successfulPurchase;
+        completePurchaseViewController.successfulUploadToServer = successfulUploadToServer;
     }
     
 }
