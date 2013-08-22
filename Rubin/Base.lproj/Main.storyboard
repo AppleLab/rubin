@@ -125,6 +125,168 @@
             </objects>
             <point key="canvasLocation" x="892" y="304"/>
         </scene>
+        <!--Navigation Controller - Команда-->
+        <scene sceneID="UED-N5-EhP">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Lwf-ob-hYc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Команда" image="rubin.png" id="JiO-A3-KCa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="qui-v0-lBg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.82745098039215681" green="0.0" blue="0.13725490196078433" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vLf-8G-LKF" kind="relationship" relationship="rootViewController" id="Mki-Eq-2JY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KxJ-kC-0t7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="971"/>
+        </scene>
+        <!--View Controller - ФК "Рубин"-->
+        <scene sceneID="1Ly-dw-Fy7">
+            <objects>
+                <viewController id="vLf-8G-LKF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R8a-bl-n1W"/>
+                        <viewControllerLayoutGuide type="bottom" id="cYM-Cw-Nm1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wti-uN-1Il">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="aYp-mb-AvV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rubin_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NKA-JH-PYR">
+                                <rect key="frame" x="85" y="20" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="НАШИ ЦЕННОСТИ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsq-o2-dE3">
+                                <rect key="frame" x="20" y="198" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ТОЛЕРАНТНОСТЬ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMI-Gd-YT6">
+                                <rect key="frame" x="20" y="227" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ЦЕЛЕУСТРЕМЛЕННОСТЬ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R81-Fq-owM">
+                                <rect key="frame" x="20" y="256" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ПРЕДАННОСТЬ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0H-4P-Y1M">
+                                <rect key="frame" x="20" y="285" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4I-Gz-rjg">
+                                <rect key="frame" x="98" y="409" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="О команде" backgroundImage="white_button.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W3o-Uv-hJS" kind="push" id="e5c-ZL-AFU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Команда" image="rubin.png" id="Mko-tS-7oN"/>
+                    <navigationItem key="navigationItem" title="ФК &quot;Рубин&quot;" id="jWF-sP-KEa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1HJ-TT-9uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="1023"/>
+        </scene>
+        <!--About Team View Controller - О команде-->
+        <scene sceneID="Qha-2x-nkc">
+            <objects>
+                <viewController id="W3o-Uv-hJS" customClass="AboutTeamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VBK-tk-JDa"/>
+                        <viewControllerLayoutGuide type="bottom" id="H5m-HD-D1A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oof-VX-xxu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="tyk-1v-JDA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3z-nj-evE">
+                                <rect key="frame" x="20" y="20" width="280" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Руби́н» (тат. Рубин Казан футбол такымы) — российский футбольный клуб из Казани. Один из лидеров российского футбола второй половины 2000-х годов. Основан в 1958 году. Двукратный чемпион России 2008 и 2009 годов. Обладатель Кубка России 2012, Кубка Содружества 2010, Суперкубка России 2010 и Суперкубка России 2012.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWP-w0-dup">
+                                <rect key="frame" x="20" y="361" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Официальная сайт">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openUrlOfficialSite:" destination="W3o-Uv-hJS" eventType="touchDown" id="gBq-Wy-v4b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-fq-lf9">
+                                <rect key="frame" x="20" y="399" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Сайт болельщиков">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openUrlFunSite:" destination="W3o-Uv-hJS" eventType="touchDown" id="oA6-dF-lBv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="О команде" id="IFh-9Q-BKe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seH-nk-5Zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="1023"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6u1-Vu-Rgm">
+            <objects>
+                <viewController id="7Gb-4L-dCt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eak-H8-UFo"/>
+                        <viewControllerLayoutGuide type="bottom" id="oVV-cm-cqh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pbp-mE-uAa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQg-dj-UHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="581"/>
+        </scene>
         <!--Third View Controller - Команда-->
         <scene sceneID="EBE-hs-g4m">
             <objects>
@@ -151,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eaa-p6-MqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376" y="916"/>
+            <point key="canvasLocation" x="1412" y="304"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -168,7 +330,7 @@
                         <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="pDa-Xr-6jp" kind="relationship" relationship="viewControllers" id="F4b-8k-XjS"/>
+                        <segue destination="Lwf-ob-hYc" kind="relationship" relationship="viewControllers" id="GBe-4q-1La"/>
                         <segue destination="DOj-q8-SGP" kind="relationship" relationship="viewControllers" id="y7w-BN-G4g"/>
                         <segue destination="lLc-N1-Rch" kind="relationship" relationship="viewControllers" id="42u-RO-z41"/>
                         <segue destination="upk-jm-awo" kind="relationship" relationship="viewControllers" id="dWy-Eg-w5O"/>
@@ -611,14 +773,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background.png" width="121.26316070556641" height="215.24211120605469"/>
         <image name="buyButton.png" width="308" height="88"/>
         <image name="credit-cards.png" width="30" height="30"/>
         <image name="message.png" width="30" height="30"/>
         <image name="newspaper.png" width="30" height="30"/>
         <image name="rubin.png" width="30" height="30"/>
+        <image name="rubin_logo.png" width="86" height="86"/>
         <image name="shopping-cart.png" width="29" height="30"/>
         <image name="ticket.png" width="30" height="30"/>
         <image name="ticketsIsUnvailable.png" width="121.26316070556641" height="215.24211120605469"/>
+        <image name="white_button.png" width="80" height="27"/>
     </resources>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
