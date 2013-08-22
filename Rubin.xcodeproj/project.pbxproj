@@ -45,6 +45,7 @@
 		CE2F3EBC17BE161B00B7C607 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F3EBB17BE161B00B7C607 /* NewsTableViewController.m */; };
 		CE412A8317BE21B600A5E802 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE412A8217BE21B600A5E802 /* NewsViewController.m */; };
 		CE93BF2417BCF35B00608860 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B82A17B9E5F000FB6223 /* Core.m */; };
+		CEC1E6C417C63BAD00F84D76 /* buyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC1E6C317C63BAD00F84D76 /* buyButton.png */; };
 		CED7B9DA17C60223002FDD2F /* item7.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D717C60223002FDD2F /* item7.png */; };
 		CED7B9DB17C60223002FDD2F /* item8.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D817C60223002FDD2F /* item8.png */; };
 		CED7B9DC17C60223002FDD2F /* item9.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D917C60223002FDD2F /* item9.png */; };
@@ -122,6 +123,7 @@
 		CE412A8117BE21B600A5E802 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		CE412A8217BE21B600A5E802 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		CEBB2C9B17BE3E4000291D45 /* rubin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rubin_icon.png; sourceTree = "<group>"; };
+		CEC1E6C317C63BAD00F84D76 /* buyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buyButton.png; sourceTree = "<group>"; };
 		CED7B9D717C60223002FDD2F /* item7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item7.png; path = images/items_for_shop/item7.png; sourceTree = "<group>"; };
 		CED7B9D817C60223002FDD2F /* item8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item8.png; path = images/items_for_shop/item8.png; sourceTree = "<group>"; };
 		CED7B9D917C60223002FDD2F /* item9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item9.png; path = images/items_for_shop/item9.png; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1E6C317C63BAD00F84D76 /* buyButton.png */,
 				CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */,
 				CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */,
 				CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */,
@@ -419,6 +422,7 @@
 				CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */,
 				CE09C58317C1F2E200E87ED7 /* icon3.png in Resources */,
 				CE01D12117C39FB50028B394 /* item5.png in Resources */,
+				CEC1E6C417C63BAD00F84D76 /* buyButton.png in Resources */,
 				CED7B9DC17C60223002FDD2F /* item9.png in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
 				CE01D12217C39FB50028B394 /* item6.png in Resources */,
