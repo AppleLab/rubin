@@ -125,6 +125,9 @@
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RubinInformation.jpg; sourceTree = "<group>"; };
+		CEFEAB6F17C6265D00E266E5 /* icon_new_2_-_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_58x58.png"; sourceTree = "<group>"; };
+		CEFEAB7017C6265D00E266E5 /* icon_new_2_-_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_80x80.png"; sourceTree = "<group>"; };
+		CEFEAB7117C6265D00E266E5 /* icon_new_2_-_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_120x120.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +304,9 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CEFEAB6F17C6265D00E266E5 /* icon_new_2_-_58x58.png */,
+				CEFEAB7017C6265D00E266E5 /* icon_new_2_-_80x80.png */,
+				CEFEAB7117C6265D00E266E5 /* icon_new_2_-_120x120.png */,
 				CE01D11617C39F780028B394 /* shop */,
 				CE09C57D17C1F2E200E87ED7 /* icon1.png */,
 				CE09C57E17C1F2E200E87ED7 /* icon2.png */,
@@ -572,6 +578,7 @@
 		C5F7B82317B9E51900FB6223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
@@ -586,6 +593,7 @@
 		C5F7B82417B9E51900FB6223 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubin/Rubin-Prefix.pch";
