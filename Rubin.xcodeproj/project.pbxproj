@@ -46,6 +46,7 @@
 		CEC1E6D317C64CDA00F84D76 /* rubin.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC1E6CE17C64CDA00F84D76 /* rubin.png */; };
 		CEC1E6D417C64CDA00F84D76 /* shopping-cart.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC1E6CF17C64CDA00F84D76 /* shopping-cart.png */; };
 		CEC1E6D517C64CDA00F84D76 /* ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC1E6D017C64CDA00F84D76 /* ticket.png */; };
+		CEC1E6D917C655ED00F84D76 /* ticketsIsUnvailable.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC1E6D817C655ED00F84D76 /* ticketsIsUnvailable.png */; };
 		CED7B9DA17C60223002FDD2F /* item7.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D717C60223002FDD2F /* item7.png */; };
 		CED7B9DB17C60223002FDD2F /* item8.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D817C60223002FDD2F /* item8.png */; };
 		CED7B9DC17C60223002FDD2F /* item9.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D917C60223002FDD2F /* item9.png */; };
@@ -124,6 +125,7 @@
 		CEC1E6CE17C64CDA00F84D76 /* rubin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rubin.png; path = images/icons/rubin.png; sourceTree = "<group>"; };
 		CEC1E6CF17C64CDA00F84D76 /* shopping-cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shopping-cart.png"; path = "images/icons/shopping-cart.png"; sourceTree = "<group>"; };
 		CEC1E6D017C64CDA00F84D76 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ticket.png; path = images/icons/ticket.png; sourceTree = "<group>"; };
+		CEC1E6D817C655ED00F84D76 /* ticketsIsUnvailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticketsIsUnvailable.png; sourceTree = "<group>"; };
 		CED7B9D717C60223002FDD2F /* item7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item7.png; path = images/items_for_shop/item7.png; sourceTree = "<group>"; };
 		CED7B9D817C60223002FDD2F /* item8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item8.png; path = images/items_for_shop/item8.png; sourceTree = "<group>"; };
 		CED7B9D917C60223002FDD2F /* item9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item9.png; path = images/items_for_shop/item9.png; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1E6D817C655ED00F84D76 /* ticketsIsUnvailable.png */,
 				CEC1E6CB17C64CC100F84D76 /* icons */,
 				CEC1E6C317C63BAD00F84D76 /* buyButton.png */,
 				CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */,
@@ -432,6 +435,7 @@
 				CEC1E6C417C63BAD00F84D76 /* buyButton.png in Resources */,
 				CED7B9DC17C60223002FDD2F /* item9.png in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
+				CEC1E6D917C655ED00F84D76 /* ticketsIsUnvailable.png in Resources */,
 				CE01D12217C39FB50028B394 /* item6.png in Resources */,
 				CEC1E6D317C64CDA00F84D76 /* rubin.png in Resources */,
 				C5F7B80417B9E51900FB6223 /* Main.storyboard in Resources */,
