@@ -50,6 +50,9 @@
 		CED7B9DC17C60223002FDD2F /* item9.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D917C60223002FDD2F /* item9.png */; };
 		CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED208817BCFAE000DA13C6 /* ThirdViewController.m */; };
 		CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */; };
+		CEFEAB7817C6276600E266E5 /* icon_new_2_-_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */; };
+		CEFEAB7917C6276600E266E5 /* icon_new_2_-_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */; };
+		CEFEAB7A17C6276600E266E5 /* icon_new_2_-_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,9 +128,9 @@
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RubinInformation.jpg; sourceTree = "<group>"; };
-		CEFEAB6F17C6265D00E266E5 /* icon_new_2_-_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_58x58.png"; sourceTree = "<group>"; };
-		CEFEAB7017C6265D00E266E5 /* icon_new_2_-_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_80x80.png"; sourceTree = "<group>"; };
-		CEFEAB7117C6265D00E266E5 /* icon_new_2_-_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_120x120.png"; sourceTree = "<group>"; };
+		CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_58x58.png"; sourceTree = "<group>"; };
+		CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_80x80.png"; sourceTree = "<group>"; };
+		CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_120x120.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,9 +307,9 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CEFEAB6F17C6265D00E266E5 /* icon_new_2_-_58x58.png */,
-				CEFEAB7017C6265D00E266E5 /* icon_new_2_-_80x80.png */,
-				CEFEAB7117C6265D00E266E5 /* icon_new_2_-_120x120.png */,
+				CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */,
+				CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */,
+				CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */,
 				CE01D11617C39F780028B394 /* shop */,
 				CE09C57D17C1F2E200E87ED7 /* icon1.png */,
 				CE09C57E17C1F2E200E87ED7 /* icon2.png */,
@@ -406,7 +409,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFEAB7817C6276600E266E5 /* icon_new_2_-_58x58.png in Resources */,
 				C5F7B80C17B9E51900FB6223 /* Images.xcassets in Resources */,
+				CEFEAB7A17C6276600E266E5 /* icon_new_2_-_120x120.png in Resources */,
 				CE01D12017C39FB50028B394 /* item4.png in Resources */,
 				CED7B9DA17C60223002FDD2F /* item7.png in Resources */,
 				CE09C58417C1F2E200E87ED7 /* icon4.png in Resources */,
@@ -424,6 +429,7 @@
 				CED7B9DB17C60223002FDD2F /* item8.png in Resources */,
 				CE01D11D17C39FB50028B394 /* item1.png in Resources */,
 				CE09C58617C1F2EC00E87ED7 /* icon5.png in Resources */,
+				CEFEAB7917C6276600E266E5 /* icon_new_2_-_80x80.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
