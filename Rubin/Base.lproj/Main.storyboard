@@ -160,7 +160,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="О Клубе" backgroundImage="buyButton.png">
+                                <state key="normal" backgroundImage="Club.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -171,7 +171,7 @@
                                 <rect key="frame" x="0.0" y="228" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="О разработчиках" backgroundImage="buyButton.png">
+                                <state key="normal" backgroundImage="Programmer.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -182,7 +182,7 @@
                                 <rect key="frame" x="0.0" y="342" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="О программе" backgroundImage="buyButton.png">
+                                <state key="normal" backgroundImage="About.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -248,7 +248,7 @@
             </objects>
             <point key="canvasLocation" x="1552" y="285"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - О разработчиках-->
         <scene sceneID="bnp-qA-XLw">
             <objects>
                 <viewController id="pK4-RZ-1MY" sceneMemberID="viewController">
@@ -259,9 +259,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bZ-rg-XSF">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iOSlab_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-xY-gNx">
+                                <rect key="frame" x="80" y="20" width="160" height="88"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Приложение разрабатывали:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQD-AD-Ayu">
+                                <rect key="frame" x="20" y="140" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-6U-Vks">
+                                <rect key="frame" x="20" y="169" width="280" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Ермакова Дарья - project manager Нургалиев Ильяс - programmer Боробов Павел - programmer Сабирзянов Артур - programmer Шайхетдинов Марат - programmer Ханнанова Лейсан - designer Гилемханов Инсаф - designer</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Приложение разработано при поддержке  ITIS iOS lab в рамках прохождения летней практики" translatesAutoresizingMaskIntoConstraints="NO" id="wre-zZ-AO3">
+                                <rect key="frame" x="20" y="374" width="280" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.86666666670000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7kz-EL-nun"/>
+                    <navigationItem key="navigationItem" title="О разработчиках" id="7kz-EL-nun"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TvQ-zl-lyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,6 +306,20 @@
                     <view key="view" contentMode="scaleToFill" id="mvB-E2-Kbt">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_new_2_-_120x120.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-hY-4Bo">
+                                <rect key="frame" x="20" y="20" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lxz-K1-TtF">
+                                <rect key="frame" x="20" y="93" width="280" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">ФК "Рубин" гордится своими болельщиками и всегда стремится сделать общение с ними не просто современными, но и максимально удобными. Мобильное приложение Rubin  - это возможность всегда иметь под рукой актуальную информацию о команде, последние новости, совершить покупку билетов и футбольной атрибутики, а также пообщаться с фанатами на форуме.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="iK8-fL-ner"/>
@@ -795,9 +837,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="About.png" width="153.60511779785156" height="54.721824645996094"/>
+        <image name="Club.png" width="153.60511779785156" height="109.44364929199219"/>
+        <image name="Programmer.png" width="153.60511779785156" height="54.721824645996094"/>
         <image name="background.png" width="121.26316070556641" height="215.24211120605469"/>
         <image name="buyButton.png" width="308" height="88"/>
         <image name="credit-cards.png" width="30" height="30"/>
+        <image name="iOSlab_logo.png" width="417" height="237"/>
+        <image name="icon_new_2_-_120x120.png" width="120" height="120"/>
         <image name="message.png" width="30" height="30"/>
         <image name="newspaper.png" width="30" height="30"/>
         <image name="rubin.png" width="30" height="30"/>

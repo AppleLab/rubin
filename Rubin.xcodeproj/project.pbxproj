@@ -56,6 +56,10 @@
 		CED7B9DC17C60223002FDD2F /* item9.png in Resources */ = {isa = PBXBuildFile; fileRef = CED7B9D917C60223002FDD2F /* item9.png */; };
 		CEED208917BCFAE000DA13C6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED208817BCFAE000DA13C6 /* ThirdViewController.m */; };
 		CEED208E17BCFE7500DA13C6 /* RubinInformation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */; };
+		CEFE5FAC17C7483800385D44 /* iOSlab_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE5FAB17C7483800385D44 /* iOSlab_logo.png */; };
+		CEFE5FB017C7522B00385D44 /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE5FAD17C7522B00385D44 /* About.png */; };
+		CEFE5FB117C7522B00385D44 /* Club.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE5FAE17C7522B00385D44 /* Club.png */; };
+		CEFE5FB217C7522B00385D44 /* Programmer.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE5FAF17C7522B00385D44 /* Programmer.png */; };
 		CEFEAB7817C6276600E266E5 /* icon_new_2_-_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */; };
 		CEFEAB7917C6276600E266E5 /* icon_new_2_-_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */; };
 		CEFEAB7A17C6276600E266E5 /* icon_new_2_-_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */; };
@@ -141,6 +145,10 @@
 		CEED208717BCFAE000DA13C6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		CEED208817BCFAE000DA13C6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CEED208D17BCFE7500DA13C6 /* RubinInformation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RubinInformation.jpg; sourceTree = "<group>"; };
+		CEFE5FAB17C7483800385D44 /* iOSlab_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iOSlab_logo.png; path = images/iOSlab_logo.png; sourceTree = "<group>"; };
+		CEFE5FAD17C7522B00385D44 /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = About.png; path = images/About.png; sourceTree = "<group>"; };
+		CEFE5FAE17C7522B00385D44 /* Club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Club.png; path = images/Club.png; sourceTree = "<group>"; };
+		CEFE5FAF17C7522B00385D44 /* Programmer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Programmer.png; path = images/Programmer.png; sourceTree = "<group>"; };
 		CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_58x58.png"; sourceTree = "<group>"; };
 		CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_80x80.png"; sourceTree = "<group>"; };
 		CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_120x120.png"; sourceTree = "<group>"; };
@@ -322,6 +330,10 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CEFE5FAD17C7522B00385D44 /* About.png */,
+				CEFE5FAE17C7522B00385D44 /* Club.png */,
+				CEFE5FAF17C7522B00385D44 /* Programmer.png */,
+				CEFE5FAB17C7483800385D44 /* iOSlab_logo.png */,
 				CEC1E6E017C6650900F84D76 /* white_button.png */,
 				CEC1E6DC17C6614400F84D76 /* rubin_logo.png */,
 				CEC1E6DA17C65F4A00F84D76 /* background.png */,
@@ -438,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFEAB7817C6276600E266E5 /* icon_new_2_-_58x58.png in Resources */,
+				CEFE5FB117C7522B00385D44 /* Club.png in Resources */,
 				CEC1E6DB17C65F4A00F84D76 /* background.png in Resources */,
 				C5F7B80C17B9E51900FB6223 /* Images.xcassets in Resources */,
 				CEC1E6E117C6650900F84D76 /* white_button.png in Resources */,
@@ -450,6 +463,7 @@
 				CEC1E6D417C64CDA00F84D76 /* shopping-cart.png in Resources */,
 				CEC1E6C417C63BAD00F84D76 /* buyButton.png in Resources */,
 				CED7B9DC17C60223002FDD2F /* item9.png in Resources */,
+				CEFE5FAC17C7483800385D44 /* iOSlab_logo.png in Resources */,
 				C5F7B7FB17B9E51900FB6223 /* InfoPlist.strings in Resources */,
 				CEC1E6D917C655ED00F84D76 /* ticketsIsUnvailable.png in Resources */,
 				CE01D12217C39FB50028B394 /* item6.png in Resources */,
@@ -458,7 +472,9 @@
 				CE01D11E17C39FB50028B394 /* item2.png in Resources */,
 				CEC1E6D217C64CDA00F84D76 /* newspaper.png in Resources */,
 				CEC1E6DD17C6614400F84D76 /* rubin_logo.png in Resources */,
+				CEFE5FB217C7522B00385D44 /* Programmer.png in Resources */,
 				CED7B9DB17C60223002FDD2F /* item8.png in Resources */,
+				CEFE5FB017C7522B00385D44 /* About.png in Resources */,
 				CE01D11D17C39FB50028B394 /* item1.png in Resources */,
 				CEFEAB7917C6276600E266E5 /* icon_new_2_-_80x80.png in Resources */,
 				CEC1E6D117C64CDA00F84D76 /* message.png in Resources */,
