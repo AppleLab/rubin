@@ -246,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HJ-TT-9uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552" y="285"/>
+            <point key="canvasLocation" x="1964" y="135"/>
         </scene>
         <!--View Controller - О разработчиках-->
         <scene sceneID="bnp-qA-XLw">
@@ -274,14 +274,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-6U-Vks">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-6U-Vks">
                                 <rect key="frame" x="20" y="169" width="280" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Ермакова Дарья - project manager Нургалиев Ильяс - programmer Боробов Павел - programmer Сабирзянов Артур - programmer Шайхетдинов Марат - programmer Ханнанова Лейсан - designer Гилемханов Инсаф - designer</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Приложение разработано при поддержке  ITIS iOS lab в рамках прохождения летней практики" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wre-zZ-AO3">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Приложение разработано при поддержке  ITIS iOS lab в рамках прохождения летней практики" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wre-zZ-AO3">
                                 <rect key="frame" x="20" y="374" width="280" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.86666666670000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -380,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seH-nk-5Zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="285"/>
+            <point key="canvasLocation" x="2466" y="135"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
