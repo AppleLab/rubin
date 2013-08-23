@@ -11,6 +11,7 @@
                     <tabBarItem key="tabBarItem" title="Билеты" image="ticket.png" id="BBm-hg-EkP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="UAq-rD-hyS">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.8666666666666667" green="0.0" blue="0.13725490196078433" alpha="1" colorSpace="deviceRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,6 +133,7 @@
                     <tabBarItem key="tabBarItem" title="Команда" image="rubin.png" id="JiO-A3-KCa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="qui-v0-lBg">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.82745098039215681" green="0.0" blue="0.13725490196078433" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <connections>
@@ -231,7 +233,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3z-nj-evE">
                                 <rect key="frame" x="20" y="20" width="280" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Руби́н» (тат. Рубин Казан футбол такымы) — российский футбольный клуб из Казани. Один из лидеров российского футбола второй половины 2000-х годов. Основан в 1958 году. Двукратный чемпион России 2008 и 2009 годов. Обладатель Кубка России 2012, Кубка Содружества 2010, Суперкубка России 2010 и Суперкубка России 2012.</mutableString>
+                                <string key="text">Руби́н» (тат. Рубин Казан футбол такымы) — российский футбольный клуб из Казани. Один из лидеров российского футбола второй половины 2000-х годов. Основан в 1958 году. Двукратный чемпион России 2008 и 2009 годов. Обладатель Кубка России 2012, Кубка Содружества 2010, Суперкубка России 2010 и Суперкубка России 2012.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -421,6 +423,7 @@
                     <tabBarItem key="tabBarItem" title="Новости" image="newspaper.png" id="8hv-Dw-Zgn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="IWw-aC-J5n">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.8666666666666667" green="0.0" blue="0.13725490196078433" alpha="1" colorSpace="deviceRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -756,6 +759,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="dle-f2-a47">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.8666666666666667" green="0.0" blue="0.13725490196078433" alpha="1" colorSpace="deviceRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
