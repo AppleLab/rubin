@@ -126,7 +126,7 @@
             </objects>
             <point key="canvasLocation" x="892" y="304"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - О клубе-->
         <scene sceneID="wwG-g1-cNd">
             <objects>
                 <viewController id="6eb-k7-ovP" sceneMemberID="viewController">
@@ -142,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" backgroundImage="buyButton.png">
+                                <state key="normal" backgroundImage="SostavNew.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -153,7 +153,7 @@
                                 <rect key="frame" x="0.0" y="228" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" backgroundImage="buyButton.png">
+                                <state key="normal" backgroundImage="RubinTVNew.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -161,20 +161,20 @@
                                 <rect key="frame" x="0.0" y="342" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" backgroundImage="buyButton.png">
+                                <state key="normal" backgroundImage="LogoNew.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="32R-pH-osS"/>
+                    <navigationItem key="navigationItem" title="О клубе" id="32R-pH-osS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgY-AJ-6dR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1490" y="341"/>
         </scene>
-        <!--Players Table View Controller-->
+        <!--Players Table View Controller - Состав-->
         <scene sceneID="DL2-PI-tQ0">
             <objects>
                 <tableViewController id="4kw-IG-Ej5" customClass="PlayersTableViewController" sceneMemberID="viewController">
@@ -206,7 +206,7 @@
                             <outlet property="delegate" destination="4kw-IG-Ej5" id="dvg-Hc-x3C"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0q0-82-EEk"/>
+                    <navigationItem key="navigationItem" title="Состав" id="0q0-82-EEk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyV-Nu-xpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,7 +230,7 @@
             </objects>
             <point key="canvasLocation" x="446" y="971"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - ФК "Рубин"-->
         <scene sceneID="z7h-uR-j3E">
             <objects>
                 <viewController id="PcH-bs-9x6" sceneMemberID="viewController">
@@ -278,7 +278,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fb9-cw-MXC"/>
+                    <navigationItem key="navigationItem" title="ФК &quot;Рубин&quot;" id="fb9-cw-MXC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCu-0g-h4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -946,7 +946,10 @@
     <resources>
         <image name="About.png" width="153.60511779785156" height="54.721824645996094"/>
         <image name="Club.png" width="153.60511779785156" height="109.44364929199219"/>
+        <image name="LogoNew.png" width="76.802558898925781" height="27.360912322998047"/>
         <image name="Programmer.png" width="153.60511779785156" height="54.721824645996094"/>
+        <image name="RubinTVNew.png" width="76.802558898925781" height="27.360912322998047"/>
+        <image name="SostavNew.png" width="76.802558898925781" height="54.721824645996094"/>
         <image name="background_white.png" width="121.26316070556641" height="215.24211120605469"/>
         <image name="background_with_dragon.png" width="121.26316070556641" height="215.24211120605469"/>
         <image name="buyButton.png" width="308" height="88"/>

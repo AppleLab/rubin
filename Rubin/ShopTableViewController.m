@@ -32,6 +32,8 @@
     self.title = @"Магазин";
     self.navigationItem.hidesBackButton = YES;
     
+
+    
     itemsForShop = [ShopUtils simpleItemsForShop];
 }
 

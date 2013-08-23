@@ -12,7 +12,7 @@
 
 // необходима для тестирование сервера
 + (BOOL) currentServerIsAvailable {
-    return NO;
+    return YES;
 }
 
 + (NSArray *) simpleItemsForShop

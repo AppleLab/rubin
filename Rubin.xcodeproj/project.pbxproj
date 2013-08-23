@@ -80,6 +80,9 @@
 		CEFE603517C76AC000385D44 /* player14.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE602517C76ABF00385D44 /* player14.png */; };
 		CEFE603617C76AC000385D44 /* player15.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE602617C76ABF00385D44 /* player15.png */; };
 		CEFE603717C76AC000385D44 /* player16.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE602717C76AC000385D44 /* player16.png */; };
+		CEFE603F17C76EB700385D44 /* SostavNew.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE603E17C76EB700385D44 /* SostavNew.png */; };
+		CEFE604117C7705A00385D44 /* LogoNew.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE604017C7705A00385D44 /* LogoNew.png */; };
+		CEFE604317C7706300385D44 /* RubinTVNew.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFE604217C7706300385D44 /* RubinTVNew.png */; };
 		CEFEAB7817C6276600E266E5 /* icon_new_2_-_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */; };
 		CEFEAB7917C6276600E266E5 /* icon_new_2_-_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */; };
 		CEFEAB7A17C6276600E266E5 /* icon_new_2_-_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */; };
@@ -191,6 +194,9 @@
 		CEFE602517C76ABF00385D44 /* player14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player14.png; path = images/players/player14.png; sourceTree = "<group>"; };
 		CEFE602617C76ABF00385D44 /* player15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player15.png; path = images/players/player15.png; sourceTree = "<group>"; };
 		CEFE602717C76AC000385D44 /* player16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player16.png; path = images/players/player16.png; sourceTree = "<group>"; };
+		CEFE603E17C76EB700385D44 /* SostavNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SostavNew.png; path = images/SostavNew.png; sourceTree = "<group>"; };
+		CEFE604017C7705A00385D44 /* LogoNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoNew.png; path = images/LogoNew.png; sourceTree = "<group>"; };
+		CEFE604217C7706300385D44 /* RubinTVNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RubinTVNew.png; path = images/RubinTVNew.png; sourceTree = "<group>"; };
 		CEFEAB7517C6276600E266E5 /* icon_new_2_-_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_58x58.png"; sourceTree = "<group>"; };
 		CEFEAB7617C6276600E266E5 /* icon_new_2_-_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_80x80.png"; sourceTree = "<group>"; };
 		CEFEAB7717C6276600E266E5 /* icon_new_2_-_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_new_2_-_120x120.png"; sourceTree = "<group>"; };
@@ -376,6 +382,9 @@
 		CE2F3EBD17BE1CFA00B7C607 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CEFE604217C7706300385D44 /* RubinTVNew.png */,
+				CEFE604017C7705A00385D44 /* LogoNew.png */,
+				CEFE603E17C76EB700385D44 /* SostavNew.png */,
 				CEFE601717C76AAF00385D44 /* players */,
 				CEFE5FB517C75A0400385D44 /* background_white.png */,
 				CEFE5FB317C757E000385D44 /* background_with_dragon.png */,
@@ -534,6 +543,7 @@
 				CEFEAB7A17C6276600E266E5 /* icon_new_2_-_120x120.png in Resources */,
 				CEFE602817C76AC000385D44 /* player1.png in Resources */,
 				CE01D12017C39FB50028B394 /* item4.png in Resources */,
+				CEFE604117C7705A00385D44 /* LogoNew.png in Resources */,
 				CEFE602F17C76AC000385D44 /* player8.png in Resources */,
 				CEFE603017C76AC000385D44 /* player9.png in Resources */,
 				CEFE5FB617C75A0400385D44 /* background_white.png in Resources */,
@@ -543,6 +553,7 @@
 				CE01D12117C39FB50028B394 /* item5.png in Resources */,
 				CEFE603217C76AC000385D44 /* player11.png in Resources */,
 				CEC1E6D417C64CDA00F84D76 /* shopping-cart.png in Resources */,
+				CEFE604317C7706300385D44 /* RubinTVNew.png in Resources */,
 				CEC1E6C417C63BAD00F84D76 /* buyButton.png in Resources */,
 				CED7B9DC17C60223002FDD2F /* item9.png in Resources */,
 				CEFE5FAC17C7483800385D44 /* iOSlab_logo.png in Resources */,
@@ -553,6 +564,7 @@
 				CEFE603617C76AC000385D44 /* player15.png in Resources */,
 				CE01D12217C39FB50028B394 /* item6.png in Resources */,
 				CEC1E6D317C64CDA00F84D76 /* rubin.png in Resources */,
+				CEFE603F17C76EB700385D44 /* SostavNew.png in Resources */,
 				C5F7B80417B9E51900FB6223 /* Main.storyboard in Resources */,
 				CE01D11E17C39FB50028B394 /* item2.png in Resources */,
 				CEFE603417C76AC000385D44 /* player13.png in Resources */,
